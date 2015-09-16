@@ -155,6 +155,7 @@ $$x(n)= \frac{1}{N} \sum\limits_{m=0}^{N-1} X(m)*e^{j*\frac{2*\pi}{N}*m*n}$$
 Længden er = 1. 
 Herefter er vi altså tilbage i tidsdomænet x(n).
 
+<<<<<<< HEAD
 
 \section{Analyse}
 \subsection{Bilmotor}
@@ -185,6 +186,27 @@ Herefter er vi altså tilbage i tidsdomænet x(n).
 
 
 
+=======
+Når vi laver sådan en analyse her så opstille vi to grafer: 
+En for længden og en for fasen (Bodeplot). \\
+
+\begin{itemize}
+\item X-aksen = Frekvens i Hz (opdelt i decader)
+\item Y-aksen på længde grafen = dB = $ 20*log(10)\mid X(m) \mid$ 
+\item Y-aksen på fasevinkel grafen = $\angle (X(m))^{\circ}  $
+\end{itemize}
+
+Når vi har fået tegnet vores graf, så har vi det, der hedder Frekvensopløsningen, som er afstanden hver sample: 
+$$\bigtriangleup f = \frac{fs}{N} $$
+
+Det næste vi kan tilføje er Analysefrekvensen: 
+$$f_{analysis}(m)=m*\bigtriangleup f$$
+
+Til sidst har vi Parsevals sætning: 
+$$ \sum\limits_{n=0}^{N=1} \mid x(n) \mid^2 = \frac{1}{N} \sum\limits_{m=0}^{N=1} \mid X(m) \mid^2    $$
+
+Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede samples i frekvensdomænet.
+>>>>>>> origin/master
 
 
 \end{document}
