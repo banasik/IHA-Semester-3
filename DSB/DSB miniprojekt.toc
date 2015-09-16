@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Begreber}{2}
+\contentsline {section}{\numberline {2}Aliasering}{2}
+\contentsline {section}{\numberline {3}Envelopes}{3}
+\contentsline {section}{\numberline {4}ADSR}{3}
+\contentsline {section}{\numberline {5}LFO}{4}
+\contentsline {section}{\numberline {6}Fourier transformation}{5}
+\contentsline {section}{\numberline {7}Analyse}{5}
+\contentsline {subsection}{\numberline {7.1}Bilmotor}{5}
