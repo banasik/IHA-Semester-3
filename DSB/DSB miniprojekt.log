@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.22)  15 SEP 2015 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.22)  16 SEP 2015 11:33
 entering extended mode
-**"KVI Noter.tex"
-("KVI Noter.tex"
+**"DSB miniprojekt.tex"
+("DSB miniprojekt.tex"
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -270,19 +270,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("KVI Noter.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+("DSB miniprojekt.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -297,116 +297,64 @@ LaTeX Font Info:    ... okay on input line 9.
 \MPnumerator=\count92
 \makeMPintoPDFobject=\count93
 \everyMPtoPDFconversion=\toks18
-) <C:/Users/Martin/Pictures/au.jpg, id=1, 307.3884pt x 80.9424pt>
-File: C:/Users/Martin/Pictures/au.jpg Graphic file (type jpg)
-
-<use C:/Users/Martin/Pictures/au.jpg>
-Package pdftex.def Info: C:/Users/Martin/Pictures/au.jpg used on input line 51.
-
+) <billeder/au.jpg, id=1, 307.3884pt x 80.9424pt>
+File: billeder/au.jpg Graphic file (type jpg)
+ <use billeder/au.jpg>
+Package pdftex.def Info: billeder/au.jpg used on input line 51.
 (pdftex.def)             Requested size: 153.69382pt x 40.4711pt.
- [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Martin/Pictures/
-au.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./billeder/au.jpg>]
+("DSB miniprojekt.toc")
+\tf@toc=\write3
+ [1]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+LaTeX Warning: Command \ae invalid in math mode on input line 90.
 
- []
+<billeder/download.jpg, id=14, 261.97874pt x 193.72375pt>
+File: billeder/download.jpg Graphic file (type jpg)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-[1] <C:/Users/Martin/Pictures/billede21.png, id=15, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede21.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede21.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede21.png used on input l
-ine 123.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [2]
-<C:/Users/Martin/Pictures/billede22.png, id=19, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede22.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede22.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede22.png used on input l
-ine 128.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [3 <C:/Users/Martin/Pictures/billede21.png>]
-<C:/Users/Martin/Pictures/billede23.png, id=23, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede23.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede23.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede23.png used on input l
-ine 135.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [4 <C:/Users/Martin/Pictures/billede22.png>]
-<C:/Users/Martin/Pictures/billede24.png, id=27, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede24.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede24.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede24.png used on input l
-ine 139.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [5 <C:/Users/Martin/Pictures/billede23.png>]
-<C:/Users/Martin/Pictures/billede25.png, id=31, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede25.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede25.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede25.png used on input l
-ine 144.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [6 <C:/Users/Martin/Pictures/billede24.png>]
-<C:/Users/Martin/Pictures/billede26.png, id=36, 845.40843pt x 597.73312pt>
-File: C:/Users/Martin/Pictures/billede26.png Graphic file (type png)
-
-<use C:/Users/Martin/Pictures/billede26.png>
-Package pdftex.def Info: C:/Users/Martin/Pictures/billede26.png used on input l
-ine 148.
-(pdftex.def)             Requested size: 390.0pt x 275.73582pt.
- [7 <C:/Users/Martin/Pictures/billede25.png>] [8 <C:/Users/Martin/Pictures/bill
-ede26.png>] ("KVI Noter.aux") ) 
+<use billeder/download.jpg>
+Package pdftex.def Info: billeder/download.jpg used on input line 98.
+(pdftex.def)             Requested size: 390.0pt x 288.40042pt.
+ [2] [3 <./billeder/download.jpg>]
+("DSB miniprojekt.aux") ) 
 Here is how much of TeX's memory you used:
- 1378 strings out of 493671
- 18153 string characters out of 3141417
- 72963 words of memory out of 3000000
- 4746 multiletter control sequences out of 15000+200000
- 7563 words of font info for 27 fonts, out of 3000000 for 9000
+ 1374 strings out of 493671
+ 17385 string characters out of 3141417
+ 72976 words of memory out of 3000000
+ 4736 multiletter control sequences out of 15000+200000
+ 9437 words of font info for 33 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,5n,24p,267b,204s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb>
-Output written on "KVI Noter.pdf" (9 pages, 389785 bytes).
+ 27i,5n,20p,273b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
+fb>
+Output written on "DSB miniprojekt.pdf" (4 pages, 232445 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,106 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {C:/Users/Martin/Pictures/} }
+
+\renewcommand*\contentsname{Indholdsfortegnelse}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Aarhus universitet}\\[1.5cm] % Name of your university/college
+\textsc{\Large DSB}\\[0.5cm] % Major heading such as course name
+\textsc{\large Semester 3}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Mini-projekt}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+\Large \emph{Studerende:}\\[1cm]
+Mette \textsc{Hammer Nielsen-Kudsk}\\[0,5cm] % Your name
+Martin \textsc{Banasik}\\[0,5cm] % Your name
+Finja \textsc{Jette Ralfs}\\[0,5cm] % Your name
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[scale=0.5]{billeder/au}\\ % Include a department/university logo - this will require the graphicx package
+ 
+ %\includegraphics[width=0.6\textwidth]{figurer/ASE}~\\[1cm]
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section*{Indledning}
+
+Når vi går fra analoge signaler til digitale, så finder vi repræsentationer af det kontinuerer signal. Dette kalder vi samples og betegnes med N.
+Når vi har flere samples på et signal, betegnes intervallet i mellem samples som $T_s$, samplingstid. Når vi har samplingstid kan vi indføre samlingsfrekvens, det inverse af samlingstid. $$f_s = 1/T_s$$
+Så snart at vi har $T_s$, ved vi at vi har med et digitalt signal at gøre.
+
+
+Ved opsætning af sampletidsaksen, definerer vi først vores sampletæller, $n$:
+$$n = [0:N-1]$$ Hvor N er antal samples.
+Efterfølgende bestemmer vi vores sampletidspunkter, $t$:
+$$t = n*T_s$$
+Vi kan nu indføre:
+$$x(t_s) = X(n*T_s) = X(n)$$
+Vi har altid en grundfrekvens og den kalder vi altid $f_0$.
+
+\section*{Aliasering}
+
+Alias = et andet navn for noget/tvetydighed.
+Vi har tre forskellige slags alias:
+\begin{itemize}
+\item Forkert samling - både for mange samples og for få
+\item Gentagelser
+\item Spejling
+\end{itemize}
+
+Shannons sandheds sætning
+$$Indsæt formel$$
+I praksis er dette aldrig lig med, men skal altid overholdes. 
+Nyquist-frekvens:
+$$f_nyquist = f_s/2$$
+Altså definereret som halvdelen af samlingsfrekvensen, $$f_s$$
+
+
+%\begin{center}
+%\includegraphics[width=\textwidth]{billeder/download}
+%\end{center}
+
+
+
+\section*{hej}
+
+
+\end{document}
