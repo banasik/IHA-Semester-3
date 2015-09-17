@@ -76,7 +76,7 @@ Vi kan nu indføre:
 $$x(t_s) = X(n*T_s) = X(n)$$
 Vi har altid en grundfrekvens og den kalder vi altid $f_0$.
 
-\section{Aliasering}
+\subsection{Aliasering}
 
 Alias = et andet navn for noget/tvetydighed.
 Vi har tre forskellige slags alias:
@@ -93,7 +93,7 @@ Nyquist-frekvens:
 $$f_{nyquist} = \frac{f_s}{2}$$
 Altså defineret som halvdelen af samlingsfrekvensen, $$f_s$$
 
-\section{Envelopes}
+\subsection{Envelopes}
 
 Envelopes = Amplitude billede over et tidsinterval. 
 Under emnet evelopes har vi to punkter: 
@@ -102,7 +102,7 @@ Under emnet evelopes har vi to punkter:
 \item LFO - Low-Frequency Oscillation
 \end{itemize}
 
-\section{ADSR}
+\subsection{ADSR}
 Vi starter med ADSR: 
 Her har vi en figur over den basale ADSR: 
 
@@ -118,7 +118,7 @@ Som det ses af figuren har vi fire forskellige stadier:
 \item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
 
-\section{LFO}
+\subsection{LFO}
 
 Hvis vi så går videre til LFO: 
 
@@ -137,7 +137,7 @@ Herefter kan vi så beregne modulations graden, som betegnes, $f_L$.
 
 Det skal så også siges at der er mange forskellige LFO-typer, det er ikke kun sinusser. Der er også firkants-, trekants-  og mange andre LFO-typer. 
 
-\section{Fourier transformation}
+\subsection{Fourier transformation}
 I DSB har vi nogle forskellige analyse værktøjer. Et af disse er Fourier transformation (DFT). Når vi benytter DFT regner vi med komplekse tal. 
 Definitionen af DFT er betegnet: 
 $$X(m)= \sum\limits_{n=0}^{N-1} x(n)*e^{-j*\frac{2*\pi}{N}*m*n}$$
@@ -155,38 +155,8 @@ $$x(n)= \frac{1}{N} \sum\limits_{m=0}^{N-1} X(m)*e^{j*\frac{2*\pi}{N}*m*n}$$
 Længden er = 1. 
 Herefter er vi altså tilbage i tidsdomænet x(n).
 
-<<<<<<< HEAD
-
 \section{Analyse}
-\subsection{Bilmotor}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 Når vi laver sådan en analyse her så opstille vi to grafer: 
 En for længden og en for fasen (Bodeplot). \\
 
@@ -206,7 +176,21 @@ Til sidst har vi Parsevals sætning:
 $$ \sum\limits_{n=0}^{N=1} \mid x(n) \mid^2 = \frac{1}{N} \sum\limits_{m=0}^{N=1} \mid X(m) \mid^2    $$
 
 Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede samples i frekvensdomænet.
->>>>>>> origin/master
 
+\subsection{Analyse af bilmotor}
+
+\subsection{Analyse af vindmøllestøj}
+
+\subsection{Analyse af EKG}
+
+\subsection{Analyse af musik 1}
+
+\subsection{Analyse af musik 2}
+
+\subsection{Analyse af musik 3}
+
+\subsection{Analyse af musik 4}
+
+\subsection{Analyse af musik 5}
 
 \end{document}
