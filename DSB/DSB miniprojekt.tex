@@ -58,7 +58,6 @@ Finja \textsc{Jette Ralfs}\\[0,5cm] % Your name
 
 \end{titlepage}
 
-
 \tableofcontents
 \newpage
 
@@ -199,11 +198,53 @@ $$ \sum\limits_{n=0}^{N=1} \mid x(n) \mid^2 = \frac{1}{N} \sum\limits_{m=0}^{N=1
 
 Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede samples i frekvensdomænet.
 
+
 \subsection{Analyse af bilmotor}
+Efter at have fået styr på alle begreberne, går vi nu i gang med bilmotoren. Koden fra MatLab og graferne, der bliver tegnet klipper vi ind, her i dokumentet. 
+Vi starter med at indsætte bilmotor lyden og derefter angiver vi alle de enheder, der skal angives, hvorefter vi opretter grafer, laver DFT og får vores signaler ind. Se nedenunder. 
+
+Vi indlæser bilmotor lyd (.wav: 
+
+[x, fsample] = wavread('ARv6');
+
+N = length(x);       -----(Antal samples)  \\       
+Tlength = N/fsample;     -----(Varighed i sek.)              
+
+X = fft(x,N);   -----( Vi laver DFT)                       
+
+%Opsætning af frekvensakse%
+$delta_f = fsample/N;$  -----(Vi finder $\bigtriangleup$f)   \\ 
+$f_{axis} = [0:delta_f:fsample-delta_f];$ ----- (Vi opretter en akse med interval)\\ 
+
+figure(1); clf  ----- (Vores Længde graf)    \\   
+$semilogx(f_axis(1:0.5*end), 20*log10(abs((2/N)*X(1:0.5*end))))$\\
+xlabel('Frekvens i Hz') \\
+ylabel('Størrelse dB rel. 1 Volt') \\
+title('DFT størrelse (magnitude)') \\
+grid on       -----   (Gøre vores akser pæne)   \\   
+axis([10 1000 -95 -25]) \\
+
+figure(2); clf 		-----  (Vores Fase vinkel graf)   \\                     
+$semilogx(f_{axis}(1:0.5*end), ((angle((2/N)*X(1:0.5*end)))))$\\
+xlabel('Frekvens i Hz')\\
+ylabel('Fase')\\
+title('DFT fase')\\
+grid on \\
+
+Når vi kører vores kode, udskrives disse grafer: 
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/storrelsebilmotor}
+\end{center}
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/fasebilmotor}
+\end{center}
 
 \subsection{Analyse af vindmøllestøj}
 
 \subsection{Analyse af EKG}
+Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funktionen "semilogx", men blot funktionen "plot".
 
 \subsection{Analyse af musik 1}
 
