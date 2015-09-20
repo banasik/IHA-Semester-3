@@ -15,6 +15,6 @@
 \contentsline {subsection}{\numberline {7.3}Analyse af EKG}{9}
 \contentsline {subsection}{\numberline {7.4}Analyse af musik 1}{9}
 \contentsline {subsection}{\numberline {7.5}Analyse af musik 2}{9}
-\contentsline {subsection}{\numberline {7.6}Analyse af musik 3}{9}
-\contentsline {subsection}{\numberline {7.7}Analyse af musik 4}{9}
-\contentsline {subsection}{\numberline {7.8}Analyse af musik 5}{9}
+\contentsline {subsection}{\numberline {7.6}Analyse af musik 3}{10}
+\contentsline {subsection}{\numberline {7.7}Analyse af musik 4}{10}
+\contentsline {subsection}{\numberline {7.8}Analyse af musik 5}{10}
