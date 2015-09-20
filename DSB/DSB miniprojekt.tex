@@ -58,10 +58,11 @@ Finja \textsc{Jette Ralfs}\\[0,5cm] % Your name
 
 \end{titlepage}
 
+
 \tableofcontents
 \newpage
 
-\section*{Begreber}
+\section{Begreber}
 
 Når vi går fra analoge signaler til digitale, så finder vi repræsentationer af det kontinuerer signal. Dette kalder vi samples og betegnes med N.
 Når vi har flere samples på et signal, betegnes intervallet i mellem samples som $T_s$, samplingstid. Når vi har samplingstid kan vi indføre samlingsfrekvens, det inverse af samlingstid. $$f_s = 1/T_s$$
@@ -76,7 +77,8 @@ Vi kan nu indføre:
 $$x(t_s) = X(n*T_s) = X(n)$$
 Vi har altid en grundfrekvens og den kalder vi altid $f_0$.
 
-\section*{Aliasering}
+
+\section{Aliasering}
 
 Alias = et andet navn for noget/tvetydighed.
 Vi har tre forskellige slags alias:
@@ -93,7 +95,7 @@ Nyquist-frekvens:
 $$f_nyquist = f_s/2$$
 Altså defineret som halvdelen af samlingsfrekvensen, $$f_s$$
 
-\section*{Envelopes}
+\section{Envelopes}
 
 Envelopes = Amplitude billede over et tidsinterval. 
 Under emnet evelopes har vi to punkter: 
@@ -102,7 +104,7 @@ Under emnet evelopes har vi to punkter:
 \item LFO - Low-Frequency Oscillation
 \end{itemize}
 
-\section*{ADSR}
+\section{ADSR}
 Vi starter med ADSR: 
 Her har vi en figur over den basale ADSR: 
 
@@ -118,7 +120,7 @@ Som det ses af figuren har vi fire forskellige stadier:
 \item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
 
-\section*{LFO}
+\section{LFO}
 
 Hvis vi så går videre til LFO: 
 
@@ -137,7 +139,7 @@ Herefter kan vi så beregne modulations graden, som betegnes, $f_L$.
 
 Det skal så også siges at der er mange forskellige LFO-typer, det er ikke kun sinusser. Der er også firkants-, trekants-  og mange andre LFO-typer. 
 
-\section*{Fourier transformation}
+\section{Fourier transformation}
 I DSB har vi nogle forskellige analyse værktøjer. Et af disse er Fourier transformation (DFT). Når vi benytter DFT regner vi med komplekse tal. 
 Definitionen af DFT er betegnet: 
 $$X(m)= \sum\limits_{n=0}^{N-1} x(n)*e^{-j*\frac{2*\pi}{N}*m*n}$$
