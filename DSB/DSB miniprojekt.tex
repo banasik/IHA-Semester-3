@@ -1,7 +1,7 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\graphicspath{ {C:/Users/Martin/Pictures/} }
+
 
 \renewcommand*\contentsname{Indholdsfortegnelse}
 
@@ -77,8 +77,12 @@ Vi kan nu indføre:
 $$x(t_s) = X(n*T_s) = X(n)$$
 Vi har altid en grundfrekvens og den kalder vi altid $f_0$.
 
+<<<<<<< HEAD
 
 \section{Aliasering}
+=======
+\subsection{Aliasering}
+>>>>>>> origin/master
 
 Alias = et andet navn for noget/tvetydighed.
 Vi har tre forskellige slags alias:
@@ -89,13 +93,17 @@ Vi har tre forskellige slags alias:
 \end{itemize}
 
 Shannons sandheds sætning
-$$Indsæt formel$$
+$$f_s\geq 2*f_{øvre}$$
 I praksis er dette aldrig lig med, men skal altid overholdes. 
 Nyquist-frekvens:
-$$f_nyquist = f_s/2$$
+$$f_{nyquist} = \frac{f_s}{2}$$
 Altså defineret som halvdelen af samlingsfrekvensen, $$f_s$$
 
+<<<<<<< HEAD
 \section{Envelopes}
+=======
+\subsection{Envelopes}
+>>>>>>> origin/master
 
 Envelopes = Amplitude billede over et tidsinterval. 
 Under emnet evelopes har vi to punkter: 
@@ -104,7 +112,11 @@ Under emnet evelopes har vi to punkter:
 \item LFO - Low-Frequency Oscillation
 \end{itemize}
 
+<<<<<<< HEAD
 \section{ADSR}
+=======
+\subsection{ADSR}
+>>>>>>> origin/master
 Vi starter med ADSR: 
 Her har vi en figur over den basale ADSR: 
 
@@ -120,7 +132,11 @@ Som det ses af figuren har vi fire forskellige stadier:
 \item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
 
+<<<<<<< HEAD
 \section{LFO}
+=======
+\subsection{LFO}
+>>>>>>> origin/master
 
 Hvis vi så går videre til LFO: 
 
@@ -132,14 +148,18 @@ Low-Frequency Oscillation er en anden måde at varierer amplituder på.
 Dette signal er for det meste under 20 Hz og bruges oftes til lydsignaler. Som navnet af denne metode siger, så bruger man altså kun dette når man har med lavere frekvenser at gøre. Frekvensen man benytter, når man skal have lavet sin sinusbølge, skal altid være lavere end tonen. 
 Når man har fået lavet sin sinus kan vi beregne modeler sinus: 
 
-$$S_mod (n) = (A_vo + 1)*s(n)$$
+$$S_{mod} (n) = (A_{vo} + 1)*s(n)$$
 ,hvor s(n) er vores sinus kurve. 
 
 Herefter kan vi så beregne modulations graden, som betegnes, $f_L$.
 
 Det skal så også siges at der er mange forskellige LFO-typer, det er ikke kun sinusser. Der er også firkants-, trekants-  og mange andre LFO-typer. 
 
+<<<<<<< HEAD
 \section{Fourier transformation}
+=======
+\subsection{Fourier transformation}
+>>>>>>> origin/master
 I DSB har vi nogle forskellige analyse værktøjer. Et af disse er Fourier transformation (DFT). Når vi benytter DFT regner vi med komplekse tal. 
 Definitionen af DFT er betegnet: 
 $$X(m)= \sum\limits_{n=0}^{N-1} x(n)*e^{-j*\frac{2*\pi}{N}*m*n}$$
@@ -156,6 +176,8 @@ $$x(n)= \frac{1}{N} \sum\limits_{m=0}^{N-1} X(m)*e^{j*\frac{2*\pi}{N}*m*n}$$
 
 Længden er = 1. 
 Herefter er vi altså tilbage i tidsdomænet x(n).
+
+\section{Analyse}
 
 Når vi laver sådan en analyse her så opstille vi to grafer: 
 En for længden og en for fasen (Bodeplot). \\
@@ -177,5 +199,20 @@ $$ \sum\limits_{n=0}^{N=1} \mid x(n) \mid^2 = \frac{1}{N} \sum\limits_{m=0}^{N=1
 
 Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede samples i frekvensdomænet.
 
+\subsection{Analyse af bilmotor}
+
+\subsection{Analyse af vindmøllestøj}
+
+\subsection{Analyse af EKG}
+
+\subsection{Analyse af musik 1}
+
+\subsection{Analyse af musik 2}
+
+\subsection{Analyse af musik 3}
+
+\subsection{Analyse af musik 4}
+
+\subsection{Analyse af musik 5}
 
 \end{document}

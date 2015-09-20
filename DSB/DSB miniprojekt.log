@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.31)  20 SEP 2015 11:32
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.22)  19 SEP 2015 07:32
+>>>>>>> origin/master
 entering extended mode
 **"DSB miniprojekt.tex"
 ("DSB miniprojekt.tex"
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
@@ -27,14 +31,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -184,7 +188,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -215,7 +219,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -305,17 +309,27 @@ Package pdftex.def Info: billeder/au.jpg used on input line 51.
 
 [1
 
-{C:/Users/Mette Hammer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./bi
-lleder/au.jpg>] ("DSB miniprojekt.toc")
-\tf@toc=\write3
- [1]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./billeder/au.jpg>]
+("DSB miniprojekt.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
+<<<<<<< HEAD
 (Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 68.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
+=======
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
+\tf@toc=\write3
+ [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+>>>>>>> origin/master
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -324,7 +338,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
 
 
+<<<<<<< HEAD
 LaTeX Warning: Command \ae invalid in math mode on input line 92.
+=======
+LaTeX Warning: Command \o invalid in math mode on input line 90.
+>>>>>>> origin/master
 
 [2] <billeder/ADSR.jpg, id=21, 501.875pt x 228.855pt>
 File: billeder/ADSR.jpg Graphic file (type jpg)
@@ -345,13 +363,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
 [5] [6] ("DSB miniprojekt.aux") ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  1380 strings out of 493673
  17470 string characters out of 3141507
  73987 words of memory out of 3000000
  4742 multiletter control sequences out of 15000+200000
  9744 words of font info for 34 fonts, out of 3000000 for 9000
+=======
+ 1380 strings out of 493671
+ 17453 string characters out of 3141417
+ 73945 words of memory out of 3000000
+ 4742 multiletter control sequences out of 15000+200000
+ 10051 words of font info for 35 fonts, out of 3000000 for 9000
+>>>>>>> origin/master
  1025 hyphenation exceptions out of 8191
- 27i,8n,20p,320b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,19p,320b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
@@ -366,7 +392,11 @@ nts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<<<<<<< HEAD
 Output written on "DSB miniprojekt.pdf" (7 pages, 319440 bytes).
+=======
+Output written on "DSB miniprojekt.pdf" (7 pages, 322315 bytes).
+>>>>>>> origin/master
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

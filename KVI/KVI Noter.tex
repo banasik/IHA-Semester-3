@@ -1,8 +1,8 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\graphicspath{ {C:/Users/Martin/Pictures/} }
 
+\renewcommand*\contentsname{Indholdsfortegnelse}
 
 
 
@@ -48,7 +48,7 @@ Martin \textsc{Banasik}\\[1cm] % Your name
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics[scale=0.5]{au}\\ % Include a department/university logo - this will require the graphicx package
+\includegraphics[scale=0.5]{billeder/au}\\ % Include a department/university logo - this will require the graphicx package
  
 %----------------------------------------------------------------------------------------
 
@@ -56,9 +56,10 @@ Martin \textsc{Banasik}\\[1cm] % Your name
 
 
 \end{titlepage}
+\tableofcontents
 \newpage
 
-\section*{Biostatistik}
+\section{Biostatistik}
 
 Variationer når man begynder at måle.
 Systematisk variation
@@ -75,12 +76,13 @@ Tilfældig variation
 \item Observatør variation (rapportering)
 \end{itemize}
 
-Hvorfor statistik?
+\subsection{Hvorfor statistik?}
 \begin{itemize}
 \item Behov for at kvantificere hvor meget af den observerede data der skyldes tilfældige variation og hvor meget der skyldes systematisk variation. \newline
-\item Behov for at resumere mange enkelte observationer i nogle få tal. \newline
-
-Hvorfor stikprøver (samples)?
+\item Behov for at resumere mange enkelte observationer i nogle få tal.
+\end{itemize}
+\subsection{Hvorfor stikprøver (samples)?}
+\begin{itemize}
 \item Hurtigere, billigere, umligt at undersøge alle, kan være tilstrækkelig med en sample, statisktiske metoder kan bruges til at vurdere usikkerhed. \newline
 
 Dataanalysen kan opdeles i \newline
@@ -120,40 +122,95 @@ Som er et data summary. Indeholder:
 \end{itemize}
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede21}
+\includegraphics[width=\textwidth]{billeder/billede21}
 \end{center}
 Normal fordelingen. Klokkeform. Spredningen er = 1 og middelværdi er = 0
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede22}
+\includegraphics[width=\textwidth]{billeder/billede22}
 \end{center}
 Til venstre viser den en middelværdi = 2 og en spredning = 0,5. til højre er middelværdi = 2 og en spredning = 1. 
 
 Middelværdien viser placeringen og spredningen viser breden af klokkeformen. 
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede23}
+\includegraphics[width=\textwidth]{billeder/billede23}
 \end{center}
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede24}
+\includegraphics[width=\textwidth]{billeder/billede24}
 \end{center}
 Beskriver hvor meget vores data spreder sig. En lille spredning er lig færre stikprøver.
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede25}
+\includegraphics[width=\textwidth]{billeder/billede25}
 \end{center}
 
 \begin{center}
-\includegraphics[width=\textwidth]{billede26}
+\includegraphics[width=\textwidth]{billeder/billede26}
 \end{center}
 Vil tilsidst blive til en normalfordeling jo mere de bliver summeret sammen (højere variable). 
 
 
 
 
+\section{Transduerprincipper}
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede27}
+\end{center}
+
+\subsection{Resistive transducere}
+\subsubsection{Potentiometer}
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede28}
+\end{center}
+Man kan sige at et potentiometer også kan kaldes for en spændingsdeler.
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede31}
+\end{center}
+$$v_0=\frac{\alpha*R}{R}*v_i = \alpha*v_i$$
+Kan også bruges til at bestemme en vinkel med.
 
 
+
+
+
+
+\newpage
+\subsubsection{Strain gauges}
+
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{billeder/billede32}
+\caption{En transformation}
+\end{figure}
+
+$$\epsilon = \frac{\Delta}L{L}$$
+Hvor $\epsilon$ er vores strain.
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede33}
+\end{center}
+$$R=\frac{l*\rho}{A}$$
+Påvirkning af modstands værdien. Et lille areal, giver en stor modstand.
+$$\frac{\partial*R}{\partial*\rho}=\frac{l}{A}\Rightarrow\partial*R_\partial=\frac{l*\partial*\rho}{A}$$
+
+
+
+
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede29}
+\end{center}
+En strain gauge er en modstandstråd som foldes og limes fast på et materiale som der så kan måles på. Det er strækningen vi gerne vil være i stand til at måle på, altså hvad bliver vores modstandsændring.
+
+
+\begin{center}
+\includegraphics[width=\textwidth]{billeder/billede30}
+\end{center}
+
+Det er længden og tværsnitsarealet som ændre sig på strain gaugen og den bruges til følsomme målinger. Det kan f.eks være en måling fra en fysisk størrelse til et elektrisk signal eller et mekanisk tryk til et elektrisk signal.
 
 
 
