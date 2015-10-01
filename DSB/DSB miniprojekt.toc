@@ -11,10 +11,10 @@
 \contentsline {subsection}{\numberline {6.1}Fourier transformation}{6}
 \contentsline {section}{\numberline {7}Analyse}{6}
 \contentsline {subsection}{\numberline {7.1}Analyse af bilmotor}{7}
-\contentsline {subsection}{\numberline {7.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{9}
-\contentsline {subsection}{\numberline {7.3}Analyse af EKG}{9}
-\contentsline {subsection}{\numberline {7.4}Analyse af musik 1}{9}
-\contentsline {subsection}{\numberline {7.5}Analyse af musik 2}{9}
-\contentsline {subsection}{\numberline {7.6}Analyse af musik 3}{10}
-\contentsline {subsection}{\numberline {7.7}Analyse af musik 4}{10}
-\contentsline {subsection}{\numberline {7.8}Analyse af musik 5}{10}
+\contentsline {subsection}{\numberline {7.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{11}
+\contentsline {subsection}{\numberline {7.3}Analyse af EKG}{13}
+\contentsline {subsection}{\numberline {7.4}Analyse af musik 1}{13}
+\contentsline {subsection}{\numberline {7.5}Analyse af musik 2}{16}
+\contentsline {subsection}{\numberline {7.6}Analyse af musik 3}{19}
+\contentsline {subsection}{\numberline {7.7}Analyse af musik 4}{22}
+\contentsline {subsection}{\numberline {7.8}Analyse af musik 5}{25}

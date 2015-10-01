@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.31)  20 SEP 2015 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.31)  1 OCT 2015 11:30
 entering extended mode
 **"DSB miniprojekt.tex"
 ("DSB miniprojekt.tex"
@@ -360,47 +360,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--233
 
  []
 
-<billeder/storrelsebilmotor.jpg, id=45, 562.1pt x 421.575pt>
+<billeder/bilmotortids.png, id=45, 421.575pt x 316.18124pt>
+File: billeder/bilmotortids.png Graphic file (type png)
+
+<use billeder/bilmotortids.png>
+Package pdftex.def Info: billeder/bilmotortids.png used on input line 237.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+
+<billeder/storrelsebilmotor.jpg, id=46, 562.1pt x 421.575pt>
 File: billeder/storrelsebilmotor.jpg Graphic file (type jpg)
 
 <use billeder/storrelsebilmotor.jpg>
-Package pdftex.def Info: billeder/storrelsebilmotor.jpg used on input line 237.
+Package pdftex.def Info: billeder/storrelsebilmotor.jpg used on input line 241.
 
 (pdftex.def)             Requested size: 390.0pt x 292.50166pt.
-
-<billeder/fasebilmotor.jpg, id=46, 562.1pt x 421.575pt>
+ [8 <./billeder/bilmotortids.png (PNG copy)>] <billeder/fasebilmotor.jpg, id=50
+, 562.1pt x 421.575pt>
 File: billeder/fasebilmotor.jpg Graphic file (type jpg)
 
 <use billeder/fasebilmotor.jpg>
-Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 241.
+Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 245.
 (pdftex.def)             Requested size: 390.0pt x 292.50166pt.
- [8 <./billeder/storrelsebilmotor.jpg>] [9 <./billeder/fasebilmotor.jpg>] [10] 
-("DSB miniprojekt.aux") ) 
+ [9 <./billeder/storrelsebilmotor.jpg>]
+<billeder/vindtid.png, id=54, 421.575pt x 316.18124pt>
+File: billeder/vindtid.png Graphic file (type png)
+
+<use billeder/vindtid.png>
+Package pdftex.def Info: billeder/vindtid.png used on input line 251.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [10 <./billeder/fasebilmotor.jpg>]
+<billeder/vindstorrelse.png, id=58, 421.575pt x 316.18124pt>
+File: billeder/vindstorrelse.png Graphic file (type png)
+
+<use billeder/vindstorrelse.png>
+Package pdftex.def Info: billeder/vindstorrelse.png used on input line 255.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [11 <./billeder/vindtid.png (PNG copy)>]
+<billeder/vindfase.png, id=62, 421.575pt x 316.18124pt>
+File: billeder/vindfase.png Graphic file (type png)
+
+<use billeder/vindfase.png>
+Package pdftex.def Info: billeder/vindfase.png used on input line 259.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [12 <./billeder/vindstorrelse.png (PNG copy)>]
+<billeder/mozarttid.png, id=67, 421.575pt x 316.18124pt>
+File: billeder/mozarttid.png Graphic file (type png)
+
+<use billeder/mozarttid.png>
+Package pdftex.def Info: billeder/mozarttid.png used on input line 269.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [13 <./billeder/vindfase.png (PNG copy)>]
+<billeder/mozartstorrelse.png, id=71, 421.575pt x 316.18124pt>
+File: billeder/mozartstorrelse.png Graphic file (type png)
+
+<use billeder/mozartstorrelse.png>
+Package pdftex.def Info: billeder/mozartstorrelse.png used on input line 273.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [14 <./billeder/mozarttid.png (PNG copy)>]
+<billeder/mozartfase.png, id=75, 421.575pt x 316.18124pt>
+File: billeder/mozartfase.png Graphic file (type png)
+
+<use billeder/mozartfase.png>
+Package pdftex.def Info: billeder/mozartfase.png used on input line 277.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [15 <./billeder/mozartstorrelse.png (PNG copy)>]
+<billeder/weekndtid.png, id=79, 421.575pt x 316.18124pt>
+File: billeder/weekndtid.png Graphic file (type png)
+
+<use billeder/weekndtid.png>
+Package pdftex.def Info: billeder/weekndtid.png used on input line 284.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [16 <./billeder/mozartfase.png (PNG copy)>]
+<billeder/weekndstorrelse.png, id=83, 421.575pt x 316.18124pt>
+File: billeder/weekndstorrelse.png Graphic file (type png)
+
+<use billeder/weekndstorrelse.png>
+Package pdftex.def Info: billeder/weekndstorrelse.png used on input line 288.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [17 <./billeder/weekndtid.png (PNG copy)>]
+<billeder/weekndfase.png, id=87, 421.575pt x 316.18124pt>
+File: billeder/weekndfase.png Graphic file (type png)
+
+<use billeder/weekndfase.png>
+Package pdftex.def Info: billeder/weekndfase.png used on input line 292.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [18 <./billeder/weekndstorrelse.png (PNG copy)>]
+<billeder/eminemtid.png, id=92, 421.575pt x 316.18124pt>
+File: billeder/eminemtid.png Graphic file (type png)
+
+<use billeder/eminemtid.png>
+Package pdftex.def Info: billeder/eminemtid.png used on input line 299.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [19 <./billeder/weekndfase.png (PNG copy)>]
+<billeder/eminemstorrelse.png, id=96, 421.575pt x 316.18124pt>
+File: billeder/eminemstorrelse.png Graphic file (type png)
+
+<use billeder/eminemstorrelse.png>
+Package pdftex.def Info: billeder/eminemstorrelse.png used on input line 303.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [20 <./billeder/eminemtid.png (PNG copy)>]
+<billeder/eminemfase.png, id=100, 421.575pt x 316.18124pt>
+File: billeder/eminemfase.png Graphic file (type png)
+
+<use billeder/eminemfase.png>
+Package pdftex.def Info: billeder/eminemfase.png used on input line 307.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [21 <./billeder/eminemstorrelse.png (PNG copy)>]
+<billeder/arctictid.png, id=104, 421.575pt x 316.18124pt>
+File: billeder/arctictid.png Graphic file (type png)
+
+<use billeder/arctictid.png>
+Package pdftex.def Info: billeder/arctictid.png used on input line 314.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [22 <./billeder/eminemfase.png (PNG copy)>]
+<billeder/arcticstorrelse.png, id=108, 421.575pt x 316.18124pt>
+File: billeder/arcticstorrelse.png Graphic file (type png)
+
+<use billeder/arcticstorrelse.png>
+Package pdftex.def Info: billeder/arcticstorrelse.png used on input line 318.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [23 <./billeder/arctictid.png (PNG copy)>]
+<billeder/arcticfase.png, id=112, 421.575pt x 316.18124pt>
+File: billeder/arcticfase.png Graphic file (type png)
+
+<use billeder/arcticfase.png>
+Package pdftex.def Info: billeder/arcticfase.png used on input line 322.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [24 <./billeder/arcticstorrelse.png (PNG copy)>]
+<billeder/rednextid.png, id=117, 421.575pt x 316.18124pt>
+File: billeder/rednextid.png Graphic file (type png)
+
+<use billeder/rednextid.png>
+Package pdftex.def Info: billeder/rednextid.png used on input line 329.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [25 <./billeder/arcticfase.png (PNG copy)>]
+<billeder/rednexstorrelse.png, id=121, 421.575pt x 316.18124pt>
+File: billeder/rednexstorrelse.png Graphic file (type png)
+
+<use billeder/rednexstorrelse.png>
+Package pdftex.def Info: billeder/rednexstorrelse.png used on input line 333.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [26 <./billeder/rednextid.png (PNG copy)>]
+<billeder/rednexfase.png, id=125, 421.575pt x 316.18124pt>
+File: billeder/rednexfase.png Graphic file (type png)
+
+<use billeder/rednexfase.png>
+Package pdftex.def Info: billeder/rednexfase.png used on input line 337.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+ [27 <./billeder/rednexstorrelse.png (PNG copy)>]
+[28 <./billeder/rednexfase.png (PNG copy)>] ("DSB miniprojekt.aux") ) 
 Here is how much of TeX's memory you used:
- 1390 strings out of 493673
- 17748 string characters out of 3141507
+ 1485 strings out of 493673
+ 20223 string characters out of 3141507
  73956 words of memory out of 3000000
- 4751 multiletter control sequences out of 15000+200000
+ 4827 multiletter control sequences out of 15000+200000
  10051 words of font info for 35 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,8n,19p,320b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "DSB miniprojekt.pdf" (11 pages, 408901 bytes).
+<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti12.pfb>
+Output written on "DSB miniprojekt.pdf" (29 pages, 697956 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
