@@ -17,3 +17,4 @@
 \contentsline {subsection}{\numberline {11.6}Analyse af Eminem}{12}
 \contentsline {subsection}{\numberline {11.7}Analyse af Arctic Monkeys}{13}
 \contentsline {subsection}{\numberline {11.8}Analyse af Rednex}{14}
+\contentsline {section}{\numberline {12}Konklusion}{15}

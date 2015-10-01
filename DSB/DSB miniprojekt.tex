@@ -118,10 +118,10 @@ Her har vi en figur over den basale ADSR:
 
 Som det ses af figuren har vi fire forskellige stadier: 
 \begin{itemize}
-\item Attack - Dette er i starten af signalet, hvor f.eks. en streng på en guitar bliver slået. Som vi kan se så stiger grafen kraftigt i Attack-stadiet. 
-\item Decay - Her falder vores graf kraftigt, en smule, da vores streng på guitaren ikke kan holde den kraftige tone i så lang tid. Den skal falde ned til den stationære lyd, hvilket er det næste stadie.  
-\item Sustain - Her holder vores graf et stationært niveau over noget tid. Dvs. at tonen, som vores guitar streng har givet, bliver holdt stabil over længere tid nu - Indtil tonen falder og dør ud (næste stadie). 
-\item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
+\item \textbf{Attack} - Dette er i starten af signalet, hvor f.eks. en streng på en guitar bliver slået. Som vi kan se så stiger grafen kraftigt i Attack-stadiet. 
+\item \textbf{Decay} - Her falder vores graf kraftigt, en smule, da vores streng på guitaren ikke kan holde den kraftige tone i så lang tid. Den skal falde ned til den stationære lyd, hvilket er det næste stadie.  
+\item \textbf{Sustain} - Her holder vores graf et stationært niveau over noget tid. Dvs. at tonen, som vores guitar streng har givet, bliver holdt stabil over længere tid nu - Indtil tonen falder og dør ud (næste stadie). 
+\item \textbf{Release} - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
 \newpage
 
@@ -134,7 +134,7 @@ Hvis vi så går videre til LFO:
 \end{center}
 
 Low-Frequency Oscillation er en anden måde at varierer amplituder på. 
-Dette signal er for det meste under 20 Hz og bruges oftes til lydsignaler. Som navnet af denne metode siger, så bruger man altså kun dette når man har med lavere frekvenser at gøre. Frekvensen man benytter, når man skal have lavet sin sinusbølge, skal altid være lavere end tonen. 
+Dette signal er for det meste under 20 Hz og bruges oftest til lydsignaler. Som navnet af denne metode siger, så bruger man altså kun dette når man har med lavere frekvenser at gøre. Frekvensen man benytter, når man skal have lavet sin sinus-bølge, skal altid være lavere end tonen. 
 Når man har fået lavet sin sinus kan vi beregne modeler sinus: 
 
 $$S_{mod} (n) = (A_{vo} + 1)*s(n)$$
@@ -248,6 +248,7 @@ ylabel('Fase')
 title('DFT fase')
 
 grid on
+\newpage
 
 Når vi kører vores kode, udskrives disse grafer: 
 
@@ -265,7 +266,7 @@ Når vi kører vores kode, udskrives disse grafer:
            \end{floatrow}
 \end{figure}
 
-Figur 1 er en graf over tidsdomænet. Her ses hvordan amplituden forholder sig i forhold til tiden. Herefter laver vi DFT og transformerer vores signal over i frekvensdomænet. Her laver vi bodeplot - amplitude- og fasekarakteristik over signalet. Figur 2 er vores amplitudespektre - som det kan ses på figur 2 har vi i bilmotorstøjen mest med lavfrekvenser at gøre.  
+Figur 1 er en graf over tidsdomænet. Her ses hvordan amplituden forholder sig i forhold til tiden. Herefter laver vi DFT og transformerer vores signal over i frekvensdomænet. Her laver vi BodePlot - amplitude- og fasekarakteristik over signalet. Figur 2 er vores amplitudespektre - som det kan ses på figur 2 har vi i bilmotor-støjen mest med lavfrekvenser at gøre.  
 Figur 3 er fasekarakteristikken, der er ikke det store fasedrej her, så i princippet er figure 3 ikke så interessant. 
 
 \newpage
@@ -291,10 +292,17 @@ Da vindmøllestøj er meget lave frekvenser, er det her smart at køre vores sig
 \newpage
 
 
-
-
 \subsection{Analyse af EKG}
 Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funktionen "semilogx", men blot funktionen "plot".
+
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/ekgtid}}{\caption{EKG signal i tidsdomænet}}
+       
+           \end{floatrow}
+\end{figure}
+
+På figur 7 ses tidsdomænet for et EKG signal. 
 
 \newpage
 
@@ -318,7 +326,7 @@ Mozart - 39's Symphony no. 40 - 1st movement
 \end{figure}
 
 På figur 6 ses Mozarts 39's symfoni i tidsdomænet. Det ses hvordan symfonien udvikler sig over tid. I begyndelsen af udklippet af symfonien er der få instrumenter, der spiller mezzo-piano, så amplituden bliver ikke særlig høj, men efter ca. 1.8 sekunder kommer der flere instrumenter på og de spiller pludselig forte, derfor bliver amplituden højere, hvilket kan ses på figur 6. 
-På figur 7 ses amplitudespektret i frekvensdomænet. 
+På figur 7 ses amplitude-spektret i frekvensdomænet. 
 Figur 8 er fasespektret. 
 
 \newpage
@@ -374,7 +382,7 @@ Arctic Monkeys - R U Mine
 \begin{figure}[!h]
            \begin{floatrow}
              \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arctictid}}{\caption{Tidsdomaæne over Artic Monkeys}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticstorrelse}}{\caption{DFT størrelse (magnitude}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
@@ -407,18 +415,13 @@ Rednex - Cotton Eye Joe
            \end{floatrow}
 \end{figure}
 
-
-
 \newpage
 
 
-
-
-
-
-
-
-
+\section{Konklusion}
+Igennem dette miniprojekt har vi lært alle de forskellige MatLab funktioner meget bedre at kende. F.eks. er vi nu helt sikre på hvordan man kommer fra tidsdomænet til frekvensdomænet og i hvilket domæne man laver de forskellige funktioner. Ved er nu klare over hvordan vi laver Zero Padding, Smoothing, Hanning vinduet osv. 
+Vi har lært alle begreberne fra forelæsningerne bedre at kende - f.eks. ved vi nu hvad Aliasering, Envelopes og Lækage betyder i et signal. 
+Vi kan konkluderer at vi ud fra amplitude-spektret for signal kan analysere utrolig meget omkring en lyd. 
 
 
 \end{document}
