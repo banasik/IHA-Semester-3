@@ -1,6 +1,7 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{floatrow}
 
 
 \renewcommand*\contentsname{Indholdsfortegnelse}
@@ -246,16 +247,28 @@ grid on \\
 
 Når vi kører vores kode, udskrives disse grafer: 
 
-\begin{center}
-\includegraphics[width=\textwidth]{billeder/bilmotortids}
-\end{center}
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.15\linewidth]{billeder/bilmotortids}}{\caption{}\label{case1}}
+             \ffigbox{\includegraphics[width=1.15\linewidth]{billeder/storrelsebilmotor}}{\caption{}\label{zoom}}       
+            
+           \end{floatrow}
+\end{figure}
+hejehej
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.15\linewidth]{billeder/fasebilmotor}}{\caption{}\label{case1}}
+                  
+            
+           \end{floatrow}
+\end{figure}
+
+
+
+
 
 \begin{center}
-\includegraphics[width=\textwidth]{billeder/storrelsebilmotor}
-\end{center}
-
-\begin{center}
-\includegraphics[width=\textwidth]{billeder/fasebilmotor}
+\includegraphics[width=1.155\linewidth]{billeder/fasebilmotor}
 \end{center}
 
 \subsection{Analyse af vindmøllestøj}
