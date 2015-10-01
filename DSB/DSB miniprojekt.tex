@@ -67,7 +67,6 @@ Når vi går fra analoge signaler til digitale, så finder vi repræsentationer 
 Når vi har flere samples på et signal, betegnes intervallet i mellem samples som $T_s$, samplingstid. Når vi har samplingstid kan vi indføre samlingsfrekvens, det inverse af samlingstid. $$f_s = 1/T_s$$
 Så snart at vi har $T_s$, ved vi at vi har med et digitalt signal at gøre.
 
-
 Ved opsætning af sampletidsaksen, definerer vi først vores sampletæller, $n$:
 $$n = [0:N-1]$$ Hvor N er antal samples.
 Efterfølgende bestemmer vi vores sampletidspunkter, $t$:
@@ -76,12 +75,10 @@ Vi kan nu indføre:
 $$x(t_s) = X(n*T_s) = X(n)$$
 Vi har altid en grundfrekvens og den kalder vi altid $f_0$.
 
-<<<<<<< HEAD
-
 \section{Aliasering}
-=======
+
 \subsection{Aliasering}
->>>>>>> origin/master
+
 
 Alias = et andet navn for noget/tvetydighed.
 Vi har tre forskellige slags alias:
@@ -98,11 +95,10 @@ Nyquist-frekvens:
 $$f_{nyquist} = \frac{f_s}{2}$$
 Altså defineret som halvdelen af samlingsfrekvensen, $$f_s$$
 
-<<<<<<< HEAD
 \section{Envelopes}
-=======
+
 \subsection{Envelopes}
->>>>>>> origin/master
+
 
 Envelopes = Amplitude billede over et tidsinterval. 
 Under emnet evelopes har vi to punkter: 
@@ -111,11 +107,11 @@ Under emnet evelopes har vi to punkter:
 \item LFO - Low-Frequency Oscillation
 \end{itemize}
 
-<<<<<<< HEAD
+
 \section{ADSR}
-=======
+
 \subsection{ADSR}
->>>>>>> origin/master
+
 Vi starter med ADSR: 
 Her har vi en figur over den basale ADSR: 
 
@@ -131,11 +127,10 @@ Som det ses af figuren har vi fire forskellige stadier:
 \item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
 
-<<<<<<< HEAD
+
 \section{LFO}
-=======
+
 \subsection{LFO}
->>>>>>> origin/master
 
 Hvis vi så går videre til LFO: 
 
@@ -154,17 +149,17 @@ Herefter kan vi så beregne modulations graden, som betegnes, $f_L$.
 
 Det skal så også siges at der er mange forskellige LFO-typer, det er ikke kun sinusser. Der er også firkants-, trekants-  og mange andre LFO-typer. 
 
-<<<<<<< HEAD
+
 \section{Fourier transformation}
-=======
+
 \subsection{Fourier transformation}
->>>>>>> origin/master
+
+
 I DSB har vi nogle forskellige analyse værktøjer. Et af disse er Fourier transformation (DFT). Når vi benytter DFT regner vi med komplekse tal. 
 Definitionen af DFT er betegnet: 
 $$X(m)= \sum\limits_{n=0}^{N-1} x(n)*e^{-j*\frac{2*\pi}{N}*m*n}$$
 
 ,hvor m = frekvens nummerering. 
-
 
 
 Det er altså sådan vi går fra tidsdomæne x(n), til frekvensdomæne X(m) - via Fourier transformation, DFT. 
@@ -175,6 +170,24 @@ $$x(n)= \frac{1}{N} \sum\limits_{m=0}^{N-1} X(m)*e^{j*\frac{2*\pi}{N}*m*n}$$
 
 Længden er = 1. 
 Herefter er vi altså tilbage i tidsdomænet x(n).
+
+\section{Zero Padding}
+Ved Zero Padding ligger vi x antal nuller ind i enden af vore signal. 
+Dette gør at vi lettere kan fange frekvenskomponenternes opførsel.
+I dette miniprojekt har vi ikke ment at det gav mening at lave zero padding på nogle af vores signaler og derfor er dette ikke blevet lavet.  
+
+\section{Lækage}
+Hvis man ikke rammer den rigtige frekvens ville alle ens samples fordele sig ud over hele x-aksen. Dette duer ikke - bliver udoverskueligt og ulæseligt. Dette kaldes lækage. Lækage er noget vi kan få nedsat. 
+
+\section{Vinduer (Hanning Vinduet)}
+Indenfor digital signal behandling har vi mange forskellige slags vinduer, der alle har forskellige egenskaber. 
+Hanning Vinduet er det vindue som vi benytter os mest af. 
+Hanning Vinduet er energimæssigt mindre, hvilket ikke gør så meget, da vi let kan skrue op for strømmen. 
+Vi mister frekvensopløsning - bliver faktisk næsten halveret, når vi benytter Hanning vinduet. Så vi betaler altså en pris, for at benytte os af Hanning vinduet og få vores signal til at se pænt og læseligt ud. 
+
+\section{Udglatning}
+Udglatning fungerer lidt ligesom et lavpasfilter - det fjerne nemlig højfrekvenserne. 
+Ved dette får vi altså pænere grafer, som er lettere læselige. Det er altså en udglatning af vores frekvensspektre, der er tale om. 
 
 \section{Analyse}
 
@@ -262,7 +275,7 @@ Når vi kører vores kode, udskrives disse grafer:
 \subsection{Analyse af EKG}
 Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funktionen "semilogx", men blot funktionen "plot".
 
-\subsection{Analyse af musik 1}
+\subsection{Analyse af Mozart}
 Mozart - 39's Symphony no. 40 - 1st movement. 
 
 \begin{center}
@@ -277,7 +290,7 @@ Mozart - 39's Symphony no. 40 - 1st movement.
 \includegraphics[width=\textwidth]{billeder/mozartfase}
 \end{center}
 
-\subsection{Analyse af musik 2}
+\subsection{Analyse af The Weeknd}
 The Weeknd - Can't feel my face
 
 \begin{center}
@@ -292,7 +305,7 @@ The Weeknd - Can't feel my face
 \includegraphics[width=\textwidth]{billeder/weekndfase}
 \end{center}
 
-\subsection{Analyse af musik 3}
+\subsection{Analyse af Eminem}
 Eminem - Lose yourself
 
 \begin{center}
@@ -307,7 +320,7 @@ Eminem - Lose yourself
 \includegraphics[width=\textwidth]{billeder/eminemfase}
 \end{center}
 
-\subsection{Analyse af musik 4}
+\subsection{Analyse af Arctic Monkeys}
 Arctic Monkeys - R U Mine
 
 \begin{center}
@@ -322,7 +335,7 @@ Arctic Monkeys - R U Mine
 \includegraphics[width=\textwidth]{billeder/arcticfase}
 \end{center}
 
-\subsection{Analyse af musik 5}
+\subsection{Analyse af Rednex}
 Rednex - Cotton Eye Joe 
 
 \begin{center}
