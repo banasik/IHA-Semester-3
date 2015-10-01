@@ -10,20 +10,10 @@
 \contentsline {section}{\numberline {10}Udglatning (Smoothing)}{5}
 \contentsline {section}{\numberline {11}Analyse}{5}
 \contentsline {subsection}{\numberline {11.1}Analyse af bilmotor}{6}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {11.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{9}
-\contentsline {subsection}{\numberline {11.3}Analyse af EKG}{10}
-\contentsline {subsection}{\numberline {11.4}Analyse af Mozart}{11}
-\contentsline {subsection}{\numberline {11.5}Analyse af The Weeknd}{12}
-\contentsline {subsection}{\numberline {11.6}Analyse af Eminem}{13}
-\contentsline {subsection}{\numberline {11.7}Analyse af Arctic Monkeys}{14}
-\contentsline {subsection}{\numberline {11.8}Analyse af Rednex}{15}
-=======
-\contentsline {subsection}{\numberline {11.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{7}
-\contentsline {subsection}{\numberline {11.3}Analyse af EKG}{8}
-\contentsline {subsection}{\numberline {11.4}Analyse af Mozart}{9}
-\contentsline {subsection}{\numberline {11.5}Analyse af The Weeknd}{10}
-\contentsline {subsection}{\numberline {11.6}Analyse af Eminem}{11}
-\contentsline {subsection}{\numberline {11.7}Analyse af Arctic Monkeys}{12}
-\contentsline {subsection}{\numberline {11.8}Analyse af Rednex}{13}
->>>>>>> origin/master
+\contentsline {subsection}{\numberline {11.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{8}
+\contentsline {subsection}{\numberline {11.3}Analyse af EKG}{9}
+\contentsline {subsection}{\numberline {11.4}Analyse af Mozart}{10}
+\contentsline {subsection}{\numberline {11.5}Analyse af The Weeknd}{11}
+\contentsline {subsection}{\numberline {11.6}Analyse af Eminem}{12}
+\contentsline {subsection}{\numberline {11.7}Analyse af Arctic Monkeys}{13}
+\contentsline {subsection}{\numberline {11.8}Analyse af Rednex}{14}
