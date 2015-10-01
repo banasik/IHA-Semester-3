@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.22)  1 OCT 2015 15:36
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.31)  1 OCT 2015 15:33
->>>>>>> origin/master
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.22)  1 OCT 2015 16:15
 entering extended mode
 **"DSB miniprojekt.tex"
 ("DSB miniprojekt.tex"
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
@@ -31,14 +27,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -188,7 +184,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -219,7 +215,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -356,6 +352,33 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 LaTeX Warning: Label `case1' multiply defined.
 
+
+LaTeX Warning: Label `zoom' multiply defined.
+
+
+LaTeX Warning: Label `case1' multiply defined.
+
+
+LaTeX Warning: Label `zoom' multiply defined.
+
+
+LaTeX Warning: Label `case1' multiply defined.
+
+
+LaTeX Warning: Label `zoom' multiply defined.
+
+
+LaTeX Warning: Label `case1' multiply defined.
+
+
+LaTeX Warning: Label `zoom' multiply defined.
+
+
+LaTeX Warning: Label `case1' multiply defined.
+
+
+LaTeX Warning: Label `zoom' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -434,8 +457,8 @@ Package pdftex.def Info: billeder/au.jpg used on input line 55.
 (pdftex.def)             Requested size: 153.69382pt x 40.4711pt.
  [1
 
-{C:/Users/Mette Hammer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./bi
-lleder/au.jpg>] ("DSB miniprojekt.toc"
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./billeder/au.jpg>]
+("DSB miniprojekt.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -466,27 +489,15 @@ Package pdftex.def Info: billeder/ADSR.jpg used on input line 116.
 File: billeder/LFO.png Graphic file (type png)
 
 <use billeder/LFO.png>
-<<<<<<< HEAD
 Package pdftex.def Info: billeder/LFO.png used on input line 133.
 (pdftex.def)             Requested size: 500.484pt x 446.34048pt.
  [3 <./billeder/ADSR.jpg>] [4 <./billeder/LFO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-=======
-Package pdftex.def Info: billeder/LFO.png used on input line 139.
-(pdftex.def)             Requested size: 390.0pt x 347.80725pt.
- [4] [5 <./billeder/LFO.png>] [6]
-Overfull \hbox (26.98595pt too wide) in paragraph at lines 190--192
-\OT1/cmr/m/n/12 Udglatning fun-gerer lidt lige-som et lav-pas-fil-ter - det fje
-rner nem-lig hjfrekvenserne.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
->>>>>>> origin/master
-
- []
-
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
@@ -496,28 +507,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--231
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 232--238
 
  []
 
-[6] <billeder/bilmotortids.png, id=42, 421.575pt x 316.18124pt>
+<billeder/bilmotortids.png, id=42, 421.575pt x 316.18124pt>
 File: billeder/bilmotortids.png Graphic file (type png)
 
 <use billeder/bilmotortids.png>
 Package pdftex.def Info: billeder/bilmotortids.png used on input line 243.
-(pdftex.def)             Requested size: 282.02678pt x 211.52191pt.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
 
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 243--243
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 243--243
  [][] 
  []
 
 File: billeder/bilmotortids.png Graphic file (type png)
 <use billeder/bilmotortids.png>
 Package pdftex.def Info: billeder/bilmotortids.png used on input line 243.
-(pdftex.def)             Requested size: 282.02678pt x 211.52191pt.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
 
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 243--243
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 243--243
  [][] 
  []
 
@@ -527,9 +538,9 @@ File: billeder/storrelsebilmotor.jpg Graphic file (type jpg)
 <use billeder/storrelsebilmotor.jpg>
 Package pdftex.def Info: billeder/storrelsebilmotor.jpg used on input line 244.
 
-(pdftex.def)             Requested size: 282.02678pt x 211.5203pt.
+(pdftex.def)             Requested size: 269.76767pt x 202.32153pt.
 
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 244--244
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 244--244
  [][] 
  []
 
@@ -537,9 +548,9 @@ File: billeder/storrelsebilmotor.jpg Graphic file (type jpg)
 <use billeder/storrelsebilmotor.jpg>
 Package pdftex.def Info: billeder/storrelsebilmotor.jpg used on input line 244.
 
-(pdftex.def)             Requested size: 282.02678pt x 211.5203pt.
+(pdftex.def)             Requested size: 269.76767pt x 202.32153pt.
 
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 244--244
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 244--244
  [][] 
  []
 
@@ -547,176 +558,391 @@ Overfull \hbox (36.78479pt too wide) in paragraph at lines 244--244
 File: billeder/fasebilmotor.jpg Graphic file (type jpg)
 
 <use billeder/fasebilmotor.jpg>
-Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 251.
-(pdftex.def)             Requested size: 282.02678pt x 211.5203pt.
-
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 251--251
- [][] 
- []
-
-File: billeder/fasebilmotor.jpg Graphic file (type jpg)
-<use billeder/fasebilmotor.jpg>
-Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 251.
-(pdftex.def)             Requested size: 282.02678pt x 211.5203pt.
-
-Overfull \hbox (36.78479pt too wide) in paragraph at lines 251--251
- [][] 
- []
-
-File: billeder/fasebilmotor.jpg Graphic file (type jpg)
-<use billeder/fasebilmotor.jpg>
-Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 262.
-(pdftex.def)             Requested size: 578.0584pt x 433.57095pt.
-
-Overfull \hbox (77.5744pt too wide) in paragraph at lines 262--263
- [] 
- []
-
-[7 <./billeder/bilmotortids.png (PNG copy)> <./billeder/storrelsebilmotor.jpg> 
-<./billeder/fasebilmotor.jpg>]
+Package pdftex.def Info: billeder/fasebilmotor.jpg used on input line 249.
+(pdftex.def)             Requested size: 275.26772pt x 206.45132pt.
+ [7 <./billeder/bilmotortids.png (PNG copy)> <./billeder/storrelsebilmotor.jpg>
+ <./billeder/fasebilmotor.jpg>]
 <billeder/vindtid.png, id=48, 421.575pt x 316.18124pt>
 File: billeder/vindtid.png Graphic file (type png)
 
 <use billeder/vindtid.png>
-Package pdftex.def Info: billeder/vindtid.png used on input line 268.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [8]
-<billeder/vindstorrelse.png, id=52, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/vindtid.png used on input line 258.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 258--258
+ [][] 
+ []
+
+File: billeder/vindtid.png Graphic file (type png)
+<use billeder/vindtid.png>
+Package pdftex.def Info: billeder/vindtid.png used on input line 258.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 258--258
+ [][] 
+ []
+
+<billeder/vindstorrelse.png, id=49, 421.575pt x 316.18124pt>
 File: billeder/vindstorrelse.png Graphic file (type png)
 
 <use billeder/vindstorrelse.png>
-Package pdftex.def Info: billeder/vindstorrelse.png used on input line 272.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [9 <./billeder/vindtid.png (PNG copy)>]
-<billeder/vindfase.png, id=56, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/vindstorrelse.png used on input line 259.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 259--259
+ [][] 
+ []
+
+File: billeder/vindstorrelse.png Graphic file (type png)
+<use billeder/vindstorrelse.png>
+Package pdftex.def Info: billeder/vindstorrelse.png used on input line 259.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 259--259
+ [][] 
+ []
+
+<billeder/vindfase.png, id=50, 421.575pt x 316.18124pt>
 File: billeder/vindfase.png Graphic file (type png)
 
 <use billeder/vindfase.png>
-Package pdftex.def Info: billeder/vindfase.png used on input line 276.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [10 <./billeder/vindstorrelse.png (PNG copy)>]
-<billeder/mozarttid.png, id=60, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/vindfase.png used on input line 265.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 265--265
+ [][] 
+ []
+
+File: billeder/vindfase.png Graphic file (type png)
+<use billeder/vindfase.png>
+Package pdftex.def Info: billeder/vindfase.png used on input line 265.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 265--265
+ [][] 
+ []
+
+[8 <./billeder/vindtid.png (PNG copy)> <./billeder/vindstorrelse.png (PNG copy)
+> <./billeder/vindfase.png (PNG copy)>] [9]
+<billeder/mozarttid.png, id=57, 421.575pt x 316.18124pt>
 File: billeder/mozarttid.png Graphic file (type png)
 
 <use billeder/mozarttid.png>
-Package pdftex.def Info: billeder/mozarttid.png used on input line 286.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [11 <./billeder/vindfase.png (PNG copy)>]
-<billeder/mozartstorrelse.png, id=64, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/mozarttid.png used on input line 287.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 287--287
+ [][] 
+ []
+
+File: billeder/mozarttid.png Graphic file (type png)
+<use billeder/mozarttid.png>
+Package pdftex.def Info: billeder/mozarttid.png used on input line 287.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 287--287
+ [][] 
+ []
+
+<billeder/mozartstorrelse.png, id=58, 421.575pt x 316.18124pt>
 File: billeder/mozartstorrelse.png Graphic file (type png)
 
 <use billeder/mozartstorrelse.png>
-Package pdftex.def Info: billeder/mozartstorrelse.png used on input line 290.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [12 <./billeder/mozarttid.png (PNG copy)>]
-<billeder/mozartfase.png, id=69, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/mozartstorrelse.png used on input line 288.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 288--288
+ [][] 
+ []
+
+File: billeder/mozartstorrelse.png Graphic file (type png)
+<use billeder/mozartstorrelse.png>
+Package pdftex.def Info: billeder/mozartstorrelse.png used on input line 288.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 288--288
+ [][] 
+ []
+
+<billeder/mozartfase.png, id=59, 421.575pt x 316.18124pt>
 File: billeder/mozartfase.png Graphic file (type png)
 
 <use billeder/mozartfase.png>
-Package pdftex.def Info: billeder/mozartfase.png used on input line 294.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [13 <./billeder/mozartstorrelse.png (PNG copy)>]
-<billeder/weekndtid.png, id=73, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/mozartfase.png used on input line 295.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 295--295
+ [][] 
+ []
+
+File: billeder/mozartfase.png Graphic file (type png)
+<use billeder/mozartfase.png>
+Package pdftex.def Info: billeder/mozartfase.png used on input line 295.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 295--295
+ [][] 
+ []
+
+[10 <./billeder/mozarttid.png (PNG copy)> <./billeder/mozartstorrelse.png (PNG 
+copy)> <./billeder/mozartfase.png (PNG copy)>]
+<billeder/weekndtid.png, id=63, 421.575pt x 316.18124pt>
 File: billeder/weekndtid.png Graphic file (type png)
 
 <use billeder/weekndtid.png>
-Package pdftex.def Info: billeder/weekndtid.png used on input line 301.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [14 <./billeder/mozartfase.png (PNG copy)>]
-<billeder/weekndstorrelse.png, id=77, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/weekndtid.png used on input line 307.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 307--307
+ [][] 
+ []
+
+File: billeder/weekndtid.png Graphic file (type png)
+<use billeder/weekndtid.png>
+Package pdftex.def Info: billeder/weekndtid.png used on input line 307.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 307--307
+ [][] 
+ []
+
+<billeder/weekndstorrelse.png, id=64, 421.575pt x 316.18124pt>
 File: billeder/weekndstorrelse.png Graphic file (type png)
 
 <use billeder/weekndstorrelse.png>
-Package pdftex.def Info: billeder/weekndstorrelse.png used on input line 305.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [15 <./billeder/weekndtid.png (PNG copy)>]
-<billeder/weekndfase.png, id=81, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/weekndstorrelse.png used on input line 308.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 308--308
+ [][] 
+ []
+
+File: billeder/weekndstorrelse.png Graphic file (type png)
+<use billeder/weekndstorrelse.png>
+Package pdftex.def Info: billeder/weekndstorrelse.png used on input line 308.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 308--308
+ [][] 
+ []
+
+<billeder/weekndfase.png, id=65, 421.575pt x 316.18124pt>
 File: billeder/weekndfase.png Graphic file (type png)
 
 <use billeder/weekndfase.png>
-Package pdftex.def Info: billeder/weekndfase.png used on input line 309.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [16 <./billeder/weekndstorrelse.png (PNG copy)>]
-<billeder/eminemtid.png, id=85, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/weekndfase.png used on input line 314.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 314--314
+ [][] 
+ []
+
+File: billeder/weekndfase.png Graphic file (type png)
+<use billeder/weekndfase.png>
+Package pdftex.def Info: billeder/weekndfase.png used on input line 314.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 314--314
+ [][] 
+ []
+
+[11 <./billeder/weekndtid.png (PNG copy)> <./billeder/weekndstorrelse.png (PNG 
+copy)> <./billeder/weekndfase.png (PNG copy)>]
+<billeder/eminemtid.png, id=69, 421.575pt x 316.18124pt>
 File: billeder/eminemtid.png Graphic file (type png)
 
 <use billeder/eminemtid.png>
-Package pdftex.def Info: billeder/eminemtid.png used on input line 316.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [17 <./billeder/weekndfase.png (PNG copy)>]
-<billeder/eminemstorrelse.png, id=89, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/eminemtid.png used on input line 327.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 327--327
+ [][] 
+ []
+
+File: billeder/eminemtid.png Graphic file (type png)
+<use billeder/eminemtid.png>
+Package pdftex.def Info: billeder/eminemtid.png used on input line 327.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 327--327
+ [][] 
+ []
+
+<billeder/eminemstorrelse.png, id=70, 421.575pt x 316.18124pt>
 File: billeder/eminemstorrelse.png Graphic file (type png)
 
 <use billeder/eminemstorrelse.png>
-Package pdftex.def Info: billeder/eminemstorrelse.png used on input line 320.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [18 <./billeder/eminemtid.png (PNG copy)>]
-<billeder/eminemfase.png, id=94, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/eminemstorrelse.png used on input line 328.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 328--328
+ [][] 
+ []
+
+File: billeder/eminemstorrelse.png Graphic file (type png)
+<use billeder/eminemstorrelse.png>
+Package pdftex.def Info: billeder/eminemstorrelse.png used on input line 328.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 328--328
+ [][] 
+ []
+
+<billeder/eminemfase.png, id=71, 421.575pt x 316.18124pt>
 File: billeder/eminemfase.png Graphic file (type png)
 
 <use billeder/eminemfase.png>
-Package pdftex.def Info: billeder/eminemfase.png used on input line 324.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [19 <./billeder/eminemstorrelse.png (PNG copy)>]
-<billeder/arctictid.png, id=98, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/eminemfase.png used on input line 334.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 334--334
+ [][] 
+ []
+
+File: billeder/eminemfase.png Graphic file (type png)
+<use billeder/eminemfase.png>
+Package pdftex.def Info: billeder/eminemfase.png used on input line 334.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 334--334
+ [][] 
+ []
+
+[12 <./billeder/eminemtid.png (PNG copy)> <./billeder/eminemstorrelse.png (PNG 
+copy)> <./billeder/eminemfase.png (PNG copy)>]
+<billeder/arctictid.png, id=76, 421.575pt x 316.18124pt>
 File: billeder/arctictid.png Graphic file (type png)
 
 <use billeder/arctictid.png>
-Package pdftex.def Info: billeder/arctictid.png used on input line 331.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [20 <./billeder/eminemfase.png (PNG copy)>]
-<billeder/arcticstorrelse.png, id=102, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/arctictid.png used on input line 349.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 349--349
+ [][] 
+ []
+
+File: billeder/arctictid.png Graphic file (type png)
+<use billeder/arctictid.png>
+Package pdftex.def Info: billeder/arctictid.png used on input line 349.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 349--349
+ [][] 
+ []
+
+<billeder/arcticstorrelse.png, id=77, 421.575pt x 316.18124pt>
 File: billeder/arcticstorrelse.png Graphic file (type png)
 
 <use billeder/arcticstorrelse.png>
-Package pdftex.def Info: billeder/arcticstorrelse.png used on input line 335.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [21 <./billeder/arctictid.png (PNG copy)>]
-<billeder/arcticfase.png, id=106, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/arcticstorrelse.png used on input line 350.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 350--350
+ [][] 
+ []
+
+File: billeder/arcticstorrelse.png Graphic file (type png)
+<use billeder/arcticstorrelse.png>
+Package pdftex.def Info: billeder/arcticstorrelse.png used on input line 350.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 350--350
+ [][] 
+ []
+
+<billeder/arcticfase.png, id=78, 421.575pt x 316.18124pt>
 File: billeder/arcticfase.png Graphic file (type png)
 
 <use billeder/arcticfase.png>
-Package pdftex.def Info: billeder/arcticfase.png used on input line 339.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [22 <./billeder/arcticstorrelse.png (PNG copy)>]
-<billeder/rednextid.png, id=110, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/arcticfase.png used on input line 357.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 357--357
+ [][] 
+ []
+
+File: billeder/arcticfase.png Graphic file (type png)
+<use billeder/arcticfase.png>
+Package pdftex.def Info: billeder/arcticfase.png used on input line 357.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 357--357
+ [][] 
+ []
+
+[13 <./billeder/arctictid.png (PNG copy)> <./billeder/arcticstorrelse.png (PNG 
+copy)> <./billeder/arcticfase.png (PNG copy)>]
+<billeder/rednextid.png, id=82, 421.575pt x 316.18124pt>
 File: billeder/rednextid.png Graphic file (type png)
 
 <use billeder/rednextid.png>
-Package pdftex.def Info: billeder/rednextid.png used on input line 346.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [23 <./billeder/arcticfase.png (PNG copy)>]
-<billeder/rednexstorrelse.png, id=114, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/rednextid.png used on input line 371.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 371--371
+ [][] 
+ []
+
+File: billeder/rednextid.png Graphic file (type png)
+<use billeder/rednextid.png>
+Package pdftex.def Info: billeder/rednextid.png used on input line 371.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 371--371
+ [][] 
+ []
+
+<billeder/rednexstorrelse.png, id=83, 421.575pt x 316.18124pt>
 File: billeder/rednexstorrelse.png Graphic file (type png)
 
 <use billeder/rednexstorrelse.png>
-Package pdftex.def Info: billeder/rednexstorrelse.png used on input line 350.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [24 <./billeder/rednextid.png (PNG copy)>]
-<billeder/rednexfase.png, id=119, 421.575pt x 316.18124pt>
+Package pdftex.def Info: billeder/rednexstorrelse.png used on input line 372.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 372--372
+ [][] 
+ []
+
+File: billeder/rednexstorrelse.png Graphic file (type png)
+<use billeder/rednexstorrelse.png>
+Package pdftex.def Info: billeder/rednexstorrelse.png used on input line 372.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 372--372
+ [][] 
+ []
+
+<billeder/rednexfase.png, id=84, 421.575pt x 316.18124pt>
 File: billeder/rednexfase.png Graphic file (type png)
 
 <use billeder/rednexfase.png>
-Package pdftex.def Info: billeder/rednexfase.png used on input line 354.
-(pdftex.def)             Requested size: 500.484pt x 375.37263pt.
- [25 <./billeder/rednexstorrelse.png (PNG copy)>]
-[26 <./billeder/rednexfase.png (PNG copy)>] ("DSB miniprojekt.aux")
+Package pdftex.def Info: billeder/rednexfase.png used on input line 378.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 378--378
+ [][] 
+ []
+
+File: billeder/rednexfase.png Graphic file (type png)
+<use billeder/rednexfase.png>
+Package pdftex.def Info: billeder/rednexfase.png used on input line 378.
+(pdftex.def)             Requested size: 269.76767pt x 202.33118pt.
+
+Overfull \hbox (24.52568pt too wide) in paragraph at lines 378--378
+ [][] 
+ []
+
+[14 <./billeder/rednextid.png (PNG copy)> <./billeder/rednexstorrelse.png (PNG 
+copy)> <./billeder/rednexfase.png (PNG copy)>] ("DSB miniprojekt.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
  3141 strings out of 493671
  46965 string characters out of 3141417
- 112577 words of memory out of 3000000
+ 112581 words of memory out of 3000000
  6453 multiletter control sequences out of 15000+200000
-=======
- 2645 strings out of 493673
- 39508 string characters out of 3141507
- 98167 words of memory out of 3000000
- 5974 multiletter control sequences out of 15000+200000
->>>>>>> origin/master
  10051 words of font info for 35 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,12n,38p,320b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -734,13 +960,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-<<<<<<< HEAD
-Output written on "DSB miniprojekt.pdf" (27 pages, 700643 bytes).
-=======
-Output written on "DSB miniprojekt.pdf" (29 pages, 702358 bytes).
->>>>>>> origin/master
+Output written on "DSB miniprojekt.pdf" (15 pages, 695531 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
