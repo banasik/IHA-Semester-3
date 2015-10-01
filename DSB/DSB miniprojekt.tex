@@ -164,21 +164,21 @@ Længden er = 1.
 Herefter er vi altså tilbage i tidsdomænet x(n).
 
 \section{Zero Padding}
-Ved Zero Padding ligger vi x antal nuller ind i enden af vore signal. 
-Dette gør at vi lettere kan fange frekvenskomponenternes opførsel.
-I dette miniprojekt har vi ikke ment at det gav mening at lave zero padding på nogle af vores signaler og derfor er dette ikke blevet lavet.  
+Ved Zero Padding ligger vi x antal nuller ind i enden af vore signal. På den måde bliver længden af vores signal længere. Vi vinder altså ikke mere information omkring signalet, vi får blot flere "nuller-samples" hæftet på i enden. 
+Dette gør at vi lettere kan fange frekvenskomponenternes opførsel (faktisk dobbelt så god frekvensopløsning) og at længderne på de forskellige signaler bliver ens. 
+I dette miniprojekt synes vi ikke det gav mening, at lave Zero Padding på nogle af vores signaler og derfor er dette ikke blevet lavet. 
 
 \section{Lækage}
-Hvis man ikke rammer den rigtige frekvens ville alle ens samples fordele sig ud over hele x-aksen. Dette duer ikke - bliver udoverskueligt og ulæseligt. Dette kaldes lækage. Lækage er noget vi kan få nedsat. 
+Hvis man ikke rammer den rigtige frekvens ville alle ens samples fordele sig ud over hele x-aksen. Dette duer ikke, det bliver udoverskueligt og ulæseligt. Dette kaldes lækage. Lækage er noget vi kan få nedsætte ved hjælp af vinduer. (se næste afsnit). 
 
 \section{Vinduer (Hanning Vinduet)}
-Indenfor digital signal behandling har vi mange forskellige slags vinduer, der alle har forskellige egenskaber. 
+Indenfor digital signal behandling har vi mange forskellige vinduer, der nedsætter lækage, ved hjælp af forskellige egenskaber. 
 Hanning Vinduet er det vindue som vi benytter os mest af. 
 Hanning Vinduet er energimæssigt mindre, hvilket ikke gør så meget, da vi let kan skrue op for strømmen. 
-Vi mister frekvensopløsning - bliver faktisk næsten halveret, når vi benytter Hanning vinduet. Så vi betaler altså en pris, for at benytte os af Hanning vinduet og få vores signal til at se pænt og læseligt ud. 
+Vi mister frekvensopløsning - bliver faktisk næsten halveret, når vi benytter Hanning vinduet. Så vi betaler altså en pris, for at benytte os af Hanning vinduet, for at få vores signal til at se pænt og læseligt ud. 
 
-\section{Udglatning}
-Udglatning fungerer lidt ligesom et lavpasfilter - det fjerne nemlig højfrekvenserne. 
+\section{Udglatning (Smoothing)}
+Udglatning fungerer lidt ligesom et lavpasfilter - det fjerner nemlig højfrekvenserne. 
 Ved dette får vi altså pænere grafer, som er lettere læselige. Det er altså en udglatning af vores frekvensspektre, der er tale om. 
 
 \section{Analyse}
