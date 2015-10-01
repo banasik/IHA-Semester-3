@@ -46,7 +46,7 @@ Finja \textsc{Jette Ralfs}\\[0,5cm] % Your name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large \today}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
+{\large Oktober 5, 2015}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
@@ -113,7 +113,7 @@ Vi starter med ADSR:
 Her har vi en figur over den basale ADSR: 
 
 \begin{center}
-\includegraphics[width=\textwidth]{billeder/ADSR}
+\includegraphics[width=0.7\textwidth]{billeder/ADSR}
 \end{center}
 
 Som det ses af figuren har vi fire forskellige stadier: 
@@ -123,14 +123,14 @@ Som det ses af figuren har vi fire forskellige stadier:
 \item Sustain - Her holder vores graf et stationært niveau over noget tid. Dvs. at tonen, som vores guitar streng har givet, bliver holdt stabil over længere tid nu - Indtil tonen falder og dør ud (næste stadie). 
 \item Release - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
 \end{itemize}
-
+\newpage
 
 \section{LFO}
 
 Hvis vi så går videre til LFO: 
 
 \begin{center}
-\includegraphics[width=\textwidth]{billeder/LFO}
+\includegraphics[width=0.7\textwidth]{billeder/LFO}
 \end{center}
 
 Low-Frequency Oscillation er en anden måde at varierer amplituder på. 
@@ -208,46 +208,62 @@ Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede sam
 Efter at have fået styr på alle begreberne, går vi nu i gang med bilmotoren. Koden fra MatLab og graferne, der bliver tegnet klipper vi ind, her i dokumentet. 
 Vi starter med at indsætte bilmotor lyden og derefter angiver vi alle de enheder, der skal angives, hvorefter vi opretter grafer, laver DFT og får vores signaler ind. Se nedenunder. 
 
-Vi indlæser bilmotor lyd (.wav: 
+Vi indlæser bilmotor lyd (.wav)
 
 [x, fsample] = wavread('ARv6');
 
-N = length(x);       -----(Antal samples)  \\       
+N = length(x);       -----(Antal samples)
+     
 Tlength = N/fsample;     -----(Varighed i sek.)              
 
 X = fft(x,N);   -----( Vi laver DFT)                       
 
 %Opsætning af frekvensakse%
-$delta_f = fsample/N;$  -----(Vi finder $\bigtriangleup$f)   \\ 
-$f_{axis} = [0:delta_f:fsample-delta_f];$ ----- (Vi opretter en akse med interval)\\ 
+$delta_f = fsample/N;$  -----(Vi finder $\bigtriangleup$f)
 
-figure(1); clf  ----- (Vores Længde graf)    \\   
-$semilogx(f_axis(1:0.5*end), 20*log10(abs((2/N)*X(1:0.5*end))))$\\
-xlabel('Frekvens i Hz') \\
-ylabel('Størrelse dB rel. 1 Volt') \\
-title('DFT størrelse (magnitude)') \\
-grid on       -----   (Gøre vores akser pæne)   \\   
-axis([10 1000 -95 -25]) \\
+$f_{axis} = [0:delta_f:fsample-delta_f];$ ----- (Vi opretter en akse med interval)\\
 
-figure(2); clf 		-----  (Vores Fase vinkel graf)   \\                     
-$semilogx(f_{axis}(1:0.5*end), ((angle((2/N)*X(1:0.5*end)))))$\\
-xlabel('Frekvens i Hz')\\
-ylabel('Fase')\\
-title('DFT fase')\\
-grid on \\
+figure(1); clf  ----- (Vores Længde graf)  
+     
+$semilogx(f_axis(1:0.5*end), 20*log10(abs((2/N)*X(1:0.5*end))))$
+
+xlabel('Frekvens i Hz')
+
+ylabel('Størrelse dB rel. 1 Volt') 
+
+title('DFT størrelse (magnitude)')
+
+grid on       -----   (Tilføjer gridlines) 
+  
+axis([10 1000 -95 -25])\\
+
+figure(2); clf 		-----  (Vores Fase vinkel graf)  
+                   
+$semilogx(f_{axis}(1:0.5*end), ((angle((2/N)*X(1:0.5*end)))))$
+
+xlabel('Frekvens i Hz')
+
+ylabel('Fase')
+
+title('DFT fase')
+
+grid on
 
 Når vi kører vores kode, udskrives disse grafer: 
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/bilmotortids}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/storrelsebilmotor}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/bilmotortids}}{\caption{Tidsdomæne over bilmotor}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/storrelsebilmotor}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
-\begin{center}
-\includegraphics[width=0.55\linewidth]{billeder/fasebilmotor}
-\end{center}
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/fasebilmotor}}{\caption{DFT fase}}
+       
+           \end{floatrow}
+\end{figure}
 
 Figur 1 er en graf over tidsdomænet. Her ses hvordan amplituden forholder sig i forhold til tiden. Herefter laver vi DFT og transformerer vores signal over i frekvensdomænet. Her laver vi bodeplot - amplitude- og fasekarakteristik over signalet. Figur 2 er vores amplitudespektre - som det kan ses på figur 2 har vi i bilmotorstøjen mest med lavfrekvenser at gøre.  
 Figur 3 er fasekarakteristikken, der er ikke det store fasedrej her, så i princippet er figure 3 ikke så interessant. 
@@ -258,14 +274,14 @@ Figur 3 er fasekarakteristikken, der er ikke det store fasedrej her, så i princ
 \subsection{Analyse af vindmøllestøj}
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindtid}}{\caption{}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindstorrelse}}{\caption{}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindtid}}{\caption{Tidsdomæne over vindmølle}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/vindfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -288,15 +304,15 @@ Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funkti
 Mozart - 39's Symphony no. 40 - 1st movement
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozarttid}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozartstorrelse}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozarttid}}{\caption{Tidsdomæne over Mozart symfoni}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozartstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozartfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/mozartfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -312,14 +328,14 @@ The Weeknd - Can't feel my face
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndtid}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndstorrelse}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndtid}}{\caption{Tidsdomæne over The Weeknd sang}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/weekndfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -335,14 +351,14 @@ Eminem - Lose yourself
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemtid}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemstorrelse}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemtid}}{\caption{Tidsdomæne over Eminem sang}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/eminemfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -357,15 +373,15 @@ Arctic Monkeys - R U Mine
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arctictid}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticstorrelse}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arctictid}}{\caption{Tidsdomaæne over Artic Monkeys}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticstorrelse}}{\caption{DFT størrelse (magnitude}}       
            \end{floatrow}
 \end{figure}
 
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/arcticfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -379,14 +395,14 @@ Rednex - Cotton Eye Joe
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednextid}}{\caption{}\label{case1}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednexstorrelse}}{\caption{}\label{zoom}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednextid}}{\caption{Tidsdomæne over Rednex}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednexstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednexfase}}{\caption{}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/rednexfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
