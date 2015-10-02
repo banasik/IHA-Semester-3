@@ -164,9 +164,9 @@ Længden er = 1.
 Herefter er vi altså tilbage i tidsdomænet x(n).
 
 \section{Zero Padding}
-Ved Zero Padding ligger vi x antal nuller ind i enden af vore signal. På den måde bliver længden af vores signal længere. Vi vinder altså ikke mere information omkring signalet, vi får blot flere "nuller-samples" hæftet på i enden. 
+Ved Zero Padding ligger vi x antal nuller ind i enden af vore signal. På den måde bliver længden af vores signal længere. Vi vinder altså ikke mere information omkring signalet, vi får blot flere "nul-samples" hæftet på i enden. 
 Dette gør at vi lettere kan fange frekvenskomponenternes opførsel (faktisk dobbelt så god frekvensopløsning) og at længderne på de forskellige signaler bliver ens. 
-I dette miniprojekt synes vi ikke det gav mening, at lave Zero Padding på nogle af vores signaler og derfor er dette ikke blevet lavet. 
+I dette miniprojekt synes vi ikke det gav mening, at lave Zero Padding på nogle af vores signaler og derfor er dette ikke blevet gjort. 
 
 \section{Lækage}
 Hvis man ikke rammer den rigtige frekvens ville alle ens samples fordele sig ud over hele x-aksen. Dette duer ikke, det bliver udoverskueligt og ulæseligt. Dette kaldes lækage. Lækage er noget vi kan få nedsætte ved hjælp af vinduer. (se næste afsnit). 
@@ -269,6 +269,8 @@ Når vi kører vores kode, udskrives disse grafer:
 Figur 1 er en graf over tidsdomænet. Her ses hvordan amplituden forholder sig i forhold til tiden. Herefter laver vi DFT og transformerer vores signal over i frekvensdomænet. Her laver vi BodePlot - amplitude- og fasekarakteristik over signalet. Figur 2 er vores amplitudespektre - som det kan ses på figur 2 har vi i bilmotor-støjen mest med lavfrekvenser at gøre.  
 Figur 3 er fasekarakteristikken, der er ikke det store fasedrej her, så i princippet er figure 3 ikke så interessant. 
 
+Det menneskelige øre kan høre frekvenser fra 20-20.000 Hz og derfor vil der i vores lydsignal i hvert fald ikke være frekvenser, hverken over eller under. Dette kan ses på alle amplitude-spektrene. 
+
 \newpage
 
 
@@ -288,6 +290,7 @@ Figur 3 er fasekarakteristikken, der er ikke det store fasedrej her, så i princ
 \end{figure}
 
 Da vindmøllestøj er meget lave frekvenser, er det her smart at køre vores signal igennem et lavpasfilter, så vi netop får filtreret alle de høje frekvenser, der ikke burde være der, fra. Det kunne f.eks. være snak og fuglekvidder. 
+På figur 6 ses vores fasespektre og her kan vi igen ikke rigtig sige noget om fasen herudfra. Derfor vil vi fra nu og resten af miniprojektet ikke kommentere på fasespektrene - det giver nemlig ingen mening i disse sammenhæng. 
 
 \newpage
 
@@ -302,7 +305,8 @@ Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funkti
            \end{floatrow}
 \end{figure}
 
-På figur 7 ses tidsdomænet for et EKG signal. 
+På figur 7 ses tidsdomænet for et EKG signal. Vi kan på dette signal analysere på en hel masse forskellige ting ift. anatomi og patofysiologi. Vi har alle de forskelle segmenter og takker. Lægerne benytter sig af EKG'er, fordi de fleste hjertesygdomme afspejles i ændringer i EKG'et. 
+
 
 \newpage
 
@@ -418,10 +422,16 @@ Rednex - Cotton Eye Joe
 \newpage
 
 
+\section{Fremtidigt arbejde}
+Vi ville rigtig gerne havde lavet Hanning vindue på vores vindmøllesignal, da vi her kunne havde fået skåret alle de baggrundsfrekvenser, der er, væk. Dette kunne vi desværre ikke finde ud af, da længderne ikke passede sammen. Vi kunne simpelthen ikke finde ud af at få længderne til at fungere, derfor fik vi ikke lavet vores Hanning vindue - det vil vi arbejde videre på og lære til næste miniprojekt. 
+Vi ville enormt gerne havde lavet udglatning op opløsning, så vi havde kunnet få vores grafer til at se rigtig flotte ud. Igen havde vi problemer med at få længderne til at passe sammen, så det fungerede ikke. 
+Vi har da lært de to MatLab funktioner "Smooth" og "HANN" at kende og ved hvad de ville havde gjort ved vores graf osv. - det var bare en skam at vi ikke kunne få det til at fungere (finder vi ud af til næste miniprojekt). 
+Vi ville med en graf også havde vist at vi har forstået Zero Padding, men det samme, med uoverensstemmelse af længderne, skete her. Vi mente ikke at det gav nogle mening, at lave Zero Padding i dette projekt og tænkte ikke videre over det. Selvfølgelig skal vi også sætte os ind i det og kan til næste gang også benytte os af MatLab funktionen "S1 = [S Zeros(1, P)] (P = antal nuller, der ønskes)". 
+Dette er fremtidigt arbejde. 
+
 \section{Konklusion}
 Igennem dette miniprojekt har vi lært alle de forskellige MatLab funktioner meget bedre at kende. F.eks. er vi nu helt sikre på hvordan man kommer fra tidsdomænet til frekvensdomænet og i hvilket domæne man laver de forskellige funktioner. Ved er nu klare over hvordan vi laver Zero Padding, Smoothing, Hanning vinduet osv. 
 Vi har lært alle begreberne fra forelæsningerne bedre at kende - f.eks. ved vi nu hvad Aliasering, Envelopes og Lækage betyder i et signal. 
-Vi kan konkluderer at vi ud fra amplitude-spektret for signal kan analysere utrolig meget omkring en lyd. 
-
+Vi kan konkluderer at vi ud fra amplitude-spektret for et signal kan analysere utrolig meget omkring en lyd, dog siger fasespektret ikke noget vi kan bruge. 
 
 \end{document}
