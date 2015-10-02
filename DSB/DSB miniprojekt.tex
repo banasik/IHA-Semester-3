@@ -39,9 +39,9 @@
 
 % If you don't want a supervisor, uncomment the two lines below and remove the section above
 \Large \emph{Studerende:}\\[1cm]
-Mette \textsc{Hammer Nielsen-Kudsk}\\[0,5cm] % Your name
-Martin \textsc{Banasik}\\[0,5cm] % Your name
-Finja \textsc{Jette Ralfs}\\[0,5cm] % Your name
+Mette \textsc{Hammer Nielsen-Kudsk - Studienr: 201408391}\\[0,5cm] % Your name
+Martin \textsc{Banasik - Studienr: 201408398}\\[0,5cm] % Your name
+Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 %----------------------------------------------------------------------------------------
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
@@ -204,7 +204,7 @@ $$ \sum\limits_{n=0}^{N=1} \mid x(n) \mid^2 = \frac{1}{N} \sum\limits_{m=0}^{N=1
 Summen af kvadrerede samples i tidsdomænet er lige med summen af kvadrerede samples i frekvensdomænet.
 
 
-\subsection{Analyse af bilmotor}
+\subsection{Analyse af bilmotorstøj}
 Efter at have fået styr på alle begreberne, går vi nu i gang med bilmotoren. Koden fra MatLab og graferne, der bliver tegnet klipper vi ind, her i dokumentet. 
 Vi starter med at indsætte bilmotor lyden og derefter angiver vi alle de enheder, der skal angives, hvorefter vi opretter grafer, laver DFT og får vores signaler ind. Se nedenunder. 
 
@@ -225,7 +225,7 @@ $f_{axis} = [0:delta_f:fsample-delta_f];$ ----- (Vi opretter en akse med interva
 
 figure(1); clf  ----- (Vores Længde graf)  
      
-$semilogx(f_axis(1:0.5*end), 20*log10(abs((2/N)*X(1:0.5*end))))$
+$semilogx(f_axis(1:0.5*end), unwrap(20*log10(abs((2/N)*X(1:0.5*end)))))$
 
 xlabel('Frekvens i Hz')
 
@@ -239,7 +239,7 @@ axis([10 1000 -95 -25])\\
 
 figure(2); clf 		-----  (Vores Fase vinkel graf)  
                    
-$semilogx(f_{axis}(1:0.5*end), ((angle((2/N)*X(1:0.5*end)))))$
+$semilogx(f_{axis}(1:0.5*end), unwrap((angle((2/N)*X(1:0.5*end)))))$
 
 xlabel('Frekvens i Hz')
 
@@ -255,13 +255,13 @@ Når vi kører vores kode, udskrives disse grafer:
 \begin{figure}[!h]
            \begin{floatrow}
              \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/bilmotortids}}{\caption{Tidsdomæne over bilmotor}}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/storrelsebilmotor}}{\caption{DFT størrelse (magnitude)}}       
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/bilmotorstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/fasebilmotor}}{\caption{DFT fase}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/bilmotorfase}}{\caption{DFT fase}}
        
            \end{floatrow}
 \end{figure}
@@ -300,12 +300,21 @@ Da vi her ikke har med et lydsignal at gøre, skal vi ikke længe benytte funkti
 
 \begin{figure}[!h]
            \begin{floatrow}
-             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/ekgtid}}{\caption{EKG signal i tidsdomænet}}
-       
+           \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/ekgtid}}{\caption{EKG signal i tidsdomænet}}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/ekgstorrelse}}{\caption{DFT størrelse (magnitude)}}       
            \end{floatrow}
 \end{figure}
 
-På figur 7 ses tidsdomænet for et EKG signal. Vi kan på dette signal analysere på en hel masse forskellige ting ift. anatomi og patofysiologi. Vi har alle de forskelle segmenter og takker. Lægerne benytter sig af EKG'er, fordi de fleste hjertesygdomme afspejles i ændringer i EKG'et. 
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/ekgfase}}{\caption{DFT fase}}
+       
+           \end{floatrow}
+\end{figure} 
+
+
+
+På figur 7 ses tidsdomænet for et EKG signal. Vi kan på dette signal analysere på en hel masse forskellige ting ift. anatomi og patofysiologi. Vi har alle de forskelle segmenter og takker. Lægerne benytter sig af EKG'er, fordi de fleste hjertesygdomme afspejles i ændringer i EKG'et.
 
 
 \newpage
@@ -352,6 +361,7 @@ The Weeknd - Can't feel my face
            \end{floatrow}
 \end{figure}
 
+For at se funktionen af "unwrap" i MatLab har vi i denne sang valgt ikke at unwrappe. Så her ser vores signaler meget mere forvirrende ud og det er ikke ligeså let at læse. 
 Vi har lige ramt ind i omkvædet af sangen, hvor der er rigtig meget gang i den - efter omkvædet stilner det lidt af igen. Dette kan ses på figur 9, som er vores signal i tidsdomænet. 
 Denne sang er rigtig sjov, for The Weeknd kan komme rigtig højt op og det giver os mulighed for at se en hel del høje frekvenser på vores figur 10. 
 
@@ -426,7 +436,7 @@ Rednex - Cotton Eye Joe
 Vi ville rigtig gerne havde lavet Hanning vindue på vores vindmøllesignal, da vi her kunne havde fået skåret alle de baggrundsfrekvenser, der er, væk. Dette kunne vi desværre ikke finde ud af, da længderne ikke passede sammen. Vi kunne simpelthen ikke finde ud af at få længderne til at fungere, derfor fik vi ikke lavet vores Hanning vindue - det vil vi arbejde videre på og lære til næste miniprojekt. 
 Vi ville enormt gerne havde lavet udglatning op opløsning, så vi havde kunnet få vores grafer til at se rigtig flotte ud. Igen havde vi problemer med at få længderne til at passe sammen, så det fungerede ikke. 
 Vi har da lært de to MatLab funktioner "Smooth" og "HANN" at kende og ved hvad de ville havde gjort ved vores graf osv. - det var bare en skam at vi ikke kunne få det til at fungere (finder vi ud af til næste miniprojekt). 
-Vi ville med en graf også havde vist at vi har forstået Zero Padding, men det samme, med uoverensstemmelse af længderne, skete her. Vi mente ikke at det gav nogle mening, at lave Zero Padding i dette projekt og tænkte ikke videre over det. Selvfølgelig skal vi også sætte os ind i det og kan til næste gang også benytte os af MatLab funktionen "S1 = [S Zeros(1, P)] (P = antal nuller, der ønskes)". 
+Vi ville med en graf også havde vist at vi har forstået Zero Padding, men det samme, med uoverensstemmelse af længderne, skete her. Vi mente ikke at det gav nogle mening, at lave Zero Padding i dette projekt og tænkte ikke videre over det. Selvfølgelig skal vi også sætte os ind i det og kan til næste gang også benytte os af MatLab funktionen "S1 = [S  Zeros(1, P)] (P = antal nuller, der ønskes)". 
 Dette er fremtidigt arbejde. 
 
 \section{Konklusion}

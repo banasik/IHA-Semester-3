@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {9}Vinduer (Hanning Vinduet)}{5}
 \contentsline {section}{\numberline {10}Udglatning (Smoothing)}{5}
 \contentsline {section}{\numberline {11}Analyse}{5}
-\contentsline {subsection}{\numberline {11.1}Analyse af bilmotor}{6}
+\contentsline {subsection}{\numberline {11.1}Analyse af bilmotorst\IeC {\o }j}{6}
 \contentsline {subsection}{\numberline {11.2}Analyse af vindm\IeC {\o }llest\IeC {\o }j}{8}
 \contentsline {subsection}{\numberline {11.3}Analyse af EKG}{9}
 \contentsline {subsection}{\numberline {11.4}Analyse af Mozart}{10}
