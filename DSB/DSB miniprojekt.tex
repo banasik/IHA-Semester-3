@@ -69,7 +69,7 @@ Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 
 Når vi går fra analoge signaler til digitale, så finder vi repræsentationer af det kontinuerer signal. Dette kalder vi samples og betegnes med N.
 Når vi har flere samples på et signal, betegnes intervallet i mellem samples som $T_s$, samplingstid. Når vi har samplingstid kan vi indføre samlingsfrekvens, det inverse af samlingstid. $$f_s = 1/T_s$$
-Så snart at vi har $T_s$, ved vi at vi har med et digitalt signal at gøre.
+Så snart vi har $T_s$, ved vi at vi har med et digitalt signal at gøre.
 
 Ved opsætning af sampletidsaksen, definerer vi først vores sampletæller, $n$:
 $$n = [0:N-1]$$ Hvor N er antal samples.
@@ -101,8 +101,8 @@ Altså defineret som halvdelen af samlingsfrekvensen, $$f_s$$
 Envelopes = Amplitude billede over et tidsinterval. 
 Under emnet evelopes har vi to punkter: 
 \begin{itemize}
-\item ADSR - Attack, Decay, Sustain, Release
-\item LFO - Low-Frequency Oscillation
+\item \textbf{ADSR} - Attack, Decay, Sustain, Release
+\item \textbf{LFO} - Low-Frequency Oscillation
 \end{itemize}
 
 
@@ -119,9 +119,9 @@ Her har vi en figur over den basale ADSR:
 Som det ses af figuren har vi fire forskellige stadier: 
 \begin{itemize}
 \item \textbf{Attack} - Dette er i starten af signalet, hvor f.eks. en streng på en guitar bliver slået. Som vi kan se så stiger grafen kraftigt i Attack-stadiet. 
-\item \textbf{Decay} - Her falder vores graf kraftigt, en smule, da vores streng på guitaren ikke kan holde den kraftige tone i så lang tid. Den skal falde ned til den stationære lyd, hvilket er det næste stadie.  
+\item \textbf{Decay} - Her falder vores graf kraftigt i kort tid,  da vores streng på guitaren ikke kan holde den kraftige tone i så lang tid. Den skal falde ned til den stationære lyd, hvilket er det næste stadie.  
 \item \textbf{Sustain} - Her holder vores graf et stationært niveau over noget tid. Dvs. at tonen, som vores guitar streng har givet, bliver holdt stabil over længere tid nu - Indtil tonen falder og dør ud (næste stadie). 
-\item \textbf{Release} - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder og til sidst dør tonen ud. 
+\item \textbf{Release} - Som vi kan se på vores graf dør vores signal ud her. Vores tone har altså holdt så længe den kan og dør nu ud efter det stabile-stadie. Så her falder tonen og til sidst dør den ud. 
 \end{itemize}
 \newpage
 
