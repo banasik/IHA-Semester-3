@@ -67,18 +67,71 @@ Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 
 \newpage
 
-\section{FIR}
+\section{FIR - Finite impulse response}
 
-\section{IIR}
+En vægtet sum (udglatning, midling), som kører hen over input-signalet x(n). 
 
-\section{Drift}
+Differensligning for filteret og definition: 
+$$ y(n)= \sum\limits_{k=0}^{M-1} b_k * x(n-k)$$
+
+hvor, 
+$$ x(n) = input $$
+$$ y(n) = output $$
+$$ b_k = filterets koefficienter $$ 
+$$ M = filterets længde $$
+$$ M-1 = filterets orden $$
+
+\section{IIR - Infinite impulse response}
+
+\section{Foldning}
+Hvis vi ønsker at koble flere filter sammen, benytter vi kobling. 
+
+Definition: 
+
+$$ y(n)= \sum\limits_{k=0}^{M-1} h_k * x(n-k) $$
+
+I MatLab benytter vi, ved foldning, funktionen "conv". 
+Hvis vi har to signaler vi vil have koblet sammen, så repræsenteres dette ved en stjerne: 
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{billeder/foldning}
+\end{center}
+
+Den røde firkant omkredser de to signaler, der bliver foldet sammen. 
+
+$$ h_1(n)\star h_2(n) $$
+
+
+\section{Impulsfunktion: $\delta(n)$}
 
 \section{Impulsrespons og overføringskarakteristik}
 
 
+\section{Vindues metoden}
+Når vi analytisk skal designe et filter, benytter vi os af vinduesmetoden. Her befinder vi os i frekvensverden (DFT). 
+1) Vi specificer det ønskede frekvens karakteristik.
+2) Herefter laver vi Invers DFT (IDFT). 
+3) Så ganger vi vinduet på. 
+4) Til sidst tjekker vi frekvenskarakteristik med DFT. 
+ 
+\section{Filter design i MatLab}
+Vi benytter os af to forskellige funktioner "fir1" og "fir2". 
+
+- "fir1": 
+$$ b = fir1(N, \frac{f_C}{0,5*f_s}, 'high') $$ 
+hvor, 
+$$ f_C = knækfrekvensen $$
+$$ f_s = samplesfrekvens $$
+
+Her vil MatLab lave et højpas filter, da vi har indskrevet 'high'. 
+Hvis vi ønskede et lavpas filter skulle vi ikke havde skrevet noget. Ønskede vi et båndpas filter, ville vi skulle skrive bandpas og ved båndstop filer, bandstop. 
+
+- "fir2": 
+$$ b = fir2(N, ..., ...) $$
+Her skal der indsættes amplituder. Benyt "help" funktionen i MatLab foran "fir2", hvis der ønskes mere information om denne funktion. 
+
 \section{Fremtidigt arbejde}
  
-
 \section{Konklusion}
 
 
