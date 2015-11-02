@@ -9,6 +9,7 @@
 
 \renewcommand*\contentsname{Indholdsfortegnelse}
 
+
 \begin{document}
 
 \begin{titlepage}
@@ -91,6 +92,14 @@ $$ M-1 = filterets orden $$
 \section{IIR - Infinite impulse response}
 
 \section{Z-transformation}
+
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/trans}}		   			{\caption{Transformationer.}}
+           \end{floatrow}
+\end{figure}
+
+
 Når vi snakker IIR filtre, så kan disse ofte være meget forvirrende, og det kan derfor være svært at se om filteret er stabilt eller ustabilt. Her indføres derfor z-transformation. 
 Definition: 
 $$ X(z)= \sum\limits_{n=0}^{M} x(n)*z^{-1}$$
@@ -118,7 +127,7 @@ Hvis vi ønsker at koble flere filter sammen, benytter vi kobling.
 
 Definition: 
 
-$$ y(n)= \sum\limits_{k=0}^{M-1} h_k * x(n-k) $$
+$$ y(n)= \sum\limits_{k=0}^{M-1} h_k * x(n-k) $$ \\
 
 I MatLab benytter vi, ved foldning, funktionen "conv". 
 Hvis vi har to signaler vi vil have koblet sammen, så repræsenteres dette ved en stjerne: 
