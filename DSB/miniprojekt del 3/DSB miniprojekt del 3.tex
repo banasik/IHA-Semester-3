@@ -83,6 +83,29 @@ $$ M-1 = filterets orden $$
 
 \section{IIR - Infinite impulse response}
 
+\section{Z-transformation}
+Når vi snakker IIR filtre, så kan disse ofte være meget forvirrende, og det kan derfor være svært at se om filteret er stabilt eller ustabilt. Her indføres derfor z-transformation. 
+Definition: 
+$$ X(z)= \sum\limits_{n=0}^{M} x(n)*z^{-1}$$
+Der er nogle forskellige ting, der er vigtige at vide ved z-transformation: 
+$$\delta(n)$$
+$$ z{\{\delta(n)}\}=1$$
+
+Hvad ville der sker hvis impulsen er delayed? 
+$$\delta(n-1)$$
+$$ z{\{\delta(n-1)}\}=z^{-1}$$
+$z^{-1}$ kaldes for unit delay. 
+
+Vi kender, fra Analoge signal, til overføringsfunktioner. Det samme gælder her: 
+
+$$ H(z)= \frac{output}{input} = \frac{Y(z)}{X(z)}$$
+
+Når vi har fået lavet vores z-transformation kan vi altså finde overføringsfunktionen for filteret. 
+Igennem overføringsfunktionen kan vi, i tælleren find ud af om filteret har nogle nulpunkter og i nævneren finde polerne. 
+Hvis IIR filteret har 1 pol er det et 1. ordens IIR filter, hvis der havde været 2 poler, havde filteret været et 2. ordens IIR filter. Det er altså derfor nævneren, i overføringsfunktionen, hvor man kan finde polerne, der er interessant. Man kan herudfra se om filteret er stabilt eller ej. Hvis polerne er under eller lig 1 er filteret stabilt, hvis polerne er over 1 er filteret ustabilt. 
+Da FIR filter altid er stabile, giver det ingen mening at lave z-transformation på disse. 
+
+
 \section{Foldning}
 Hvis vi ønsker at koble flere filter sammen, benytter vi kobling. 
 
