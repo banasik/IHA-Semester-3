@@ -47,7 +47,7 @@ Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large Oktober 5, 2015}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
+{\large November 15, 2015}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
@@ -72,7 +72,7 @@ Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 
 En vægtet sum (udglatning, midling), som kører hen over input-signalet x(n). 
 
-Differensligning for filteret og definition: 
+Differensligning for FIR-filteret og definition: 
 $$ y(n)= \sum\limits_{k=0}^{M-1} b_k * x(n-k)$$
 
 hvor, 
@@ -88,8 +88,24 @@ $$ M-1 = filterets orden $$
            \end{floatrow}
 \end{figure}
 
+Ved brugen af et FIR filter stopper outputtet. 
+
 
 \section{IIR - Infinite impulse response}
+
+IIR er en anden type for et digitalt filter, der kan have et uendeligt respons på en impuls. 
+
+Differensligning for FIR-filteret og definition: 
+$$ y(n)= \sum\limits_{k=0}^{M} b_k * x(n-k) - \sum\limits_{k=1}^{N}*a_k *y(n-k) $$
+hvor, 
+$$ x(n) = input $$
+$$ y(n) = output $$
+$$ b_k = filterets feedforward koefficienter $$ 
+$$ M = filterets orden $$
+$$ a_k = filterets feedback koefficienter $$
+
+Ved brugen af et IIR filter stopper outputtet aldrig. 
+
 
 \section{Z-transformation}
 
@@ -127,7 +143,7 @@ Hvis vi ønsker at koble flere filter sammen, benytter vi kobling.
 
 Definition: 
 
-$$ y(n)= \sum\limits_{k=0}^{M-1} h_k * x(n-k) $$ \\
+$$ y(n)= \sum\limits_{k=0}^{M-1} h(k) * x(n-k) $$ \\
 
 I MatLab benytter vi, ved foldning, funktionen "conv". 
 Hvis vi har to signaler vi vil have koblet sammen, så repræsenteres dette ved en stjerne: 
@@ -142,8 +158,6 @@ $$ h_1(n)\star h_2(n) $$
 
 
 \section{Impulsfunktion: $\delta(n)$}
-
-\section{Impulsrespons og overføringskarakteristik}
 
 
 \section{Vindues metoden}
@@ -169,34 +183,77 @@ Hvis vi ønskede et lavpas filter skulle vi ikke havde skrevet noget. Ønskede v
 $$ b = fir2(N, ..., ...) $$
 Her skal der indsættes amplituder. Benyt "help" funktionen i MatLab foran "fir2", hvis der ønskes mere information om denne funktion. 
 
+Vi har i løbet af skriveprocessen lært at benytte funktionen "fdatool". Den er blevet brugt i løbet af dette miniprojekt til at designe et FIR lavpas filter og et FIR båndstop filter. 
+
+\begin{figure}[!h]
+           \begin{floatrow}
+             \ffigbox{\includegraphics[width=1.1\linewidth]{billeder/fdatool}}		   			{\caption{fdatool i MatLab}}
+           \end{floatrow}
+\end{figure}
+
+
 
 \section{Filtrering af EKG signal}
 
-\begin{figure}[!h]
+Der er blevet fundet et støjfyldt EKG-signal inde på siden Physionet. Her er EKG-signalet vist og som man kan se er der utrolig meget støj lige ved de 50 Hz. Det kan ses i tidsdomænet at EKG-signalet er ret støjfyldt efter hvert pulsslag, mellem PR-segmenterne og QT-segmenterne. Det ønsker vi fjernet. 
+
+\begin{figure}[H]
            \includegraphics[width=\linewidth]{billeder/EKGufiltreret}	   							\caption{EKG ufiltreret.}
 \end{figure}
 
-\begin{figure}[!h]
-           \includegraphics[width=\linewidth]{billeder/EKGstopbandFIR}	   							\caption{EKG med stopbånd FIR.}
+Det mest iøjnefaldende er støjen ved de 50 Hz, så dem starter vi med at få fjernet. Det gøres i form af et IIR båndstopfilter. Det bliver designet vha. af MatLab funktionen "fdatool". Her indtastes:
+$$ Fs = 500 $$
+$$ Fpass1 = 47 $$
+$$ Fstop1 = 48 $$
+$$ Fstop2 = 52 $$
+$$ Fpass2 = 53 $$
+
+Vi har altså ønsket en knækfrekvens på de 50 Hz. 
+Filteret loades herefter ind i MatLab filen og ligges ovenpå det støjfyldte EKG-signal i frekvensdomænet. 
+Det kan nu ses på figurerne herunder at støjen ved de 50 Hz er blevet fjernet. Hvis vi sammenligner figur 3 og 4 i tidsdomænet kan det ses at støjen mellem de forskellige segmenter er mindsket. Det samme gælder i frekvensdomænet, hvor der i figur 3, kan ses støjen ved de 50 Hz - den er væk i figur 4 efter vi har kørt EKG-signalet igennem båndstop filteret.  
+Hvis man kigger godt efter på frekvensdomænet i figur 4, kan man se lidt støj mellem 35 og 85 Hz. Det ønsker vi også fjernet. 
+
+\begin{figure}[H]
+           \includegraphics[width=\linewidth]{billeder/EKGstopbandFIR}	   							\caption{EKG med båndstop FIR.}
 \end{figure}
 
-\begin{figure}[!h]
+Dette fjernes med et FIR lavpasfilter, der også bliver designet vha. "fdatool". Her indtastes: 
+
+$$ Fs = 500 $$
+$$ Fpass = 35 $$
+$$ Fstop = 40 $$
+
+Vi har altså ønsket en knækfrekvens på 38 Hz. 
+Hvis man kigger på figur 5 og sammenligner med figur 4, kan man nu se i frekvensdomænet, at støjen efter de 35 Hz er blevet fjernet.
+Igen kan vi se i tidsdomænet at vores EKG-signal er blevet meget pænere og mindre støjfyldt. Hvis vi går helt tilbage og sammenligner figur 3 og 5, kan vi se at EKG-signalet er meget pænere. 
+
+
+\begin{figure}[H]
            \includegraphics[width=\linewidth]{billeder/EKGlavpasFIR}	   							\caption{EKG med lavpas FIR.}
 \end{figure}
 
-\begin{figure}[!h]
-           \includegraphics[width=\linewidth]{billeder/EKGtidsdomain}	   							\caption{Sammenligning af EKG i tids domain.}
+For lettere at se forbedringerne har vi sat forbedringerne under hinanden vha. funktionen "subplot". Her har vi først EKG-signalet i tidsdomænet, hvor man tydeligt kan se at støjen er blevet fjernet. 
+
+\begin{figure}[H]
+           \includegraphics[width=\linewidth]{billeder/EKGtidsdomain}	   							\caption{Sammenligning af EKG i tidsdomæne.}
 \end{figure}
 
-\begin{figure}[!h]
-           \includegraphics[width=\linewidth]{billeder/EKGfrekvensdomain}	   							\caption{Sammenligning af EKG i frekvens domain.}
+Her har vi sammenligningen af signalerne i frekvensdomænet. Ved det ufiltreret EKG-signal ser vi tydeligt støjen ved de 50 Hz. Dem fik vi fjernet vha. båndstop filteret. 
+Hvis man kigger godt efter kan man faktisk også se lidt støj ved 150 Hz. Da vi ønskede at fjerne støj fra 35 Hz og frem, så fik vi også fjernet støjen ved de 150 Hz. 
+
+
+\begin{figure}[H]
+           \includegraphics[width=\linewidth]{billeder/EKGfrekvensdomain}	   							\caption{Sammenligning af EKG i frekvensdomænet.}
 \end{figure}
 
 
+\section{Fremtidigt arbejde}
+Vi ønsker at få lidt bedre styr på FIR og IIR filtre og hvordan de helt prævis hænger sammen. Vi har fået en god forståelse af hvad de gør, men vil alle gerne vide mere. Dette undersøges til næste miniprojekt og er derved vores fremtidige arbejde.
 
+\section{Konklusion}
+Vi kan konkludere at funktionen "fdatool" er super lækker at benytte når man skal have designet et filter. Man slipper for at bøvle med at skrive selve koden og hvordan MatLab funktionerne som f.eks. "fir1 og fir2" skal opbygges. Selvfølgelig skal man stadig kende fs og fc osv. men det giver jo sig selv. 
+Vi har fået et klart større indblik i hvad de forskellige filtre kan, også ift. IIR og FIR filtre. Det giver meget bedre mening nu, efter man har siddet og leget med det og forsøgt sig frem med de forskellige filtre. Man har kunne se hvad virker på hvad og hvad helt sikkert ikke fungerer. 
 
-%\section{Fremtidigt arbejde}
-%\section{Konklusion}
 
 
 \end{document}
