@@ -47,7 +47,7 @@ Finja \textsc{Jette Ralfs - Studienr: 201303659}\\[0,5cm] % Your name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large November 15, 2015}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
+{\large November 17, 2015}\\[1,2cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
@@ -157,9 +157,6 @@ Den røde firkant omkredser de to signaler, der bliver foldet sammen.
 $$ h_1(n)\star h_2(n) $$
 
 
-\section{Impulsfunktion: $\delta(n)$}
-
-
 \section{Vindues metoden}
 Når vi analytisk skal designe et filter, benytter vi os af vinduesmetoden. Her befinder vi os i frekvensverden (DFT). 
 1) Vi specificer det ønskede frekvens karakteristik.
@@ -183,7 +180,7 @@ Hvis vi ønskede et lavpas filter skulle vi ikke havde skrevet noget. Ønskede v
 $$ b = fir2(N, ..., ...) $$
 Her skal der indsættes amplituder. Benyt "help" funktionen i MatLab foran "fir2", hvis der ønskes mere information om denne funktion. 
 
-Vi har i løbet af skriveprocessen lært at benytte funktionen "fdatool". Den er blevet brugt i løbet af dette miniprojekt til at designe et FIR lavpas filter og et FIR båndstop filter. 
+Vi har i løbet af skriveprocessen lært at benytte funktionen "fdatool". Den er blevet brugt i løbet af dette miniprojekt til at designe et FIR lavpas filter. 
 
 \begin{figure}[!h]
            \begin{floatrow}
@@ -201,38 +198,43 @@ Der er blevet fundet et støjfyldt EKG-signal inde på siden Physionet. Her er E
            \includegraphics[width=\linewidth]{billeder/EKGufiltreret}	   							\caption{EKG ufiltreret.}
 \end{figure}
 
-Det mest iøjnefaldende er støjen ved de 50 Hz, så dem starter vi med at få fjernet. Det gøres i form af et IIR båndstopfilter. Det bliver designet vha. af MatLab funktionen "fdatool". Her indtastes:
-$$ Fs = 500 $$
-$$ Fpass1 = 48 $$
-$$ Fstop1 = 49 $$
-$$ Fstop2 = 51 $$
-$$ Fpass2 = 52 $$
+Det mest iøjnefaldende er støjen ved de 50 Hz, så dem starter vi med at få fjernet. Det gøres i form af et IIR båndstopfilter. Det designes vha. matlab funktionen "fir1". 
 
-Vi har altså ønsket en knækfrekvens på de 50 Hz. 
-Filteret loades herefter ind i MatLab filen og ligges ovenpå det støjfyldte EKG-signal i frekvensdomænet. 
-Det kan nu ses på figurerne herunder at støjen ved de 50 Hz er blevet fjernet. Hvis vi sammenligner figur 3 og 4 i tidsdomænet kan det ses at støjen mellem de forskellige segmenter er mindsket. Det samme gælder i frekvensdomænet, hvor der i figur 3, kan ses støjen ved de 50 Hz - den er væk i figur 4 efter vi har kørt EKG-signalet igennem båndstop filteret.  
+
+Vi ønsker en knækfrekvens på de 50 Hz. 
+Filteret ligges ovenpå det støjfyldte EKG-signal i frekvensdomænet. 
+Herudover har vi også lavet et Højpas filter, der fjerne DC og drift. Dette filter ligges også ovenpå. 
+dette højpasfilter laves også med fir1 og har en knækfrekvens på 3 Hz, da DC driften er lavfrekvent. 
+Det kan nu ses på figurerne herunder at støjen ved de 50 Hz er blevet fjernet, drift og DC også. Hvis vi sammenligner figur 3 og 4 i tidsdomænet kan det ses at støjen mellem de forskellige segmenter er mindsket. Det samme gælder i frekvensdomænet, hvor der i figur 3, kan ses støjen ved de 50 Hz - den er væk i figur 4 efter vi har kørt EKG-signalet igennem båndstop filteret.  
 Hvis man kigger godt efter på frekvensdomænet i figur 4, kan man se lidt støj mellem 35 og 85 Hz. Det ønsker vi også fjernet. 
 
 \begin{figure}[H]
-           \includegraphics[width=\linewidth]{billeder/EKGstopbandIIR}	   							\caption{EKG med båndstop IIR.}
+           \includegraphics[width=\linewidth]{billeder/bandstopIIRogHojpasFIR}	   							\caption{EKG med båndstop IIR.}
 \end{figure}
 
-Dette fjernes med et FIR lavpasfilter, der også bliver designet vha. "fdatool". Her indtastes: 
+På figur 5 ses EKG-signalet med et båndpasfilter og et Højpasfilter. 
+Båndpasfilteret desgines via. matlab funktionen fir1, hvor knækfrekvensen sættes til 50 Hz, for at få fjernet støjen. 
+Højpasfilteret er også desginet med fir1, hvor knækfrekvensen her er 3 Hz, da DC drift er meget lavfrekvent. 
+
+Lavpas filteret skal fjerne den resterende støj. Lavpas FIR filteret bliver designet vha. "fdatool". Her indtastes: 
 
 $$ Fs = 500 $$
 $$ Fpass = 35 $$
 $$ Fstop = 40 $$
 
 Vi har altså ønsket en knækfrekvens på 38 Hz. 
-Hvis man kigger på figur 5 og sammenligner med figur 4, kan man nu se i frekvensdomænet, at støjen efter de 35 Hz er blevet fjernet.
-Igen kan vi se i tidsdomænet at vores EKG-signal er blevet meget pænere og mindre støjfyldt. Hvis vi går helt tilbage og sammenligner figur 3 og 5, kan vi se at EKG-signalet er meget pænere. 
+Hvis man kigger på figur 6 og sammenligner med figur 5, kan man nu se i frekvensdomænet, at støjen efter de 35 Hz er blevet fjernet.
+Igen kan vi se i tidsdomænet at vores EKG-signal er blevet meget pænere og mindre støjfyldt. Hvis vi går helt tilbage og sammenligner figur 4 og 6, kan vi se at EKG-signalet er meget pænere. 
 
 
 \begin{figure}[H]
-           \includegraphics[width=\linewidth]{billeder/EKGlavpasFIR}	   							\caption{EKG med lavpas FIR.}
+           \includegraphics[width=\linewidth]{billeder/lavpasFIRBandstopIIRogHojpasFIR}	   							\caption{EKG med lavpas FIR.}
 \end{figure}
 
+
+
 For lettere at se forbedringerne har vi sat forbedringerne under hinanden vha. funktionen "subplot". Her har vi først EKG-signalet i tidsdomænet, hvor man tydeligt kan se at støjen er blevet fjernet. 
+Man kan i tidsdomænet se at drift er blevet fjernet. 
 
 \begin{figure}[H]
            \includegraphics[width=\linewidth]{billeder/EKGtidsdomain}	   							\caption{Sammenligning af EKG i tidsdomæne.}
@@ -240,6 +242,7 @@ For lettere at se forbedringerne har vi sat forbedringerne under hinanden vha. f
 
 Her har vi sammenligningen af signalerne i frekvensdomænet. Ved det ufiltreret EKG-signal ser vi tydeligt støjen ved de 50 Hz. Dem fik vi fjernet vha. båndstop filteret. 
 Hvis man kigger godt efter kan man faktisk også se lidt støj ved 150 Hz. Da vi ønskede at fjerne støj fra 35 Hz og frem, så fik vi også fjernet støjen ved de 150 Hz. 
+
 
 
 \begin{figure}[H]
