@@ -203,10 +203,10 @@ Der er blevet fundet et støjfyldt EKG-signal inde på siden Physionet. Her er E
 
 Det mest iøjnefaldende er støjen ved de 50 Hz, så dem starter vi med at få fjernet. Det gøres i form af et IIR båndstopfilter. Det bliver designet vha. af MatLab funktionen "fdatool". Her indtastes:
 $$ Fs = 500 $$
-$$ Fpass1 = 47 $$
-$$ Fstop1 = 48 $$
-$$ Fstop2 = 52 $$
-$$ Fpass2 = 53 $$
+$$ Fpass1 = 48 $$
+$$ Fstop1 = 49 $$
+$$ Fstop2 = 51 $$
+$$ Fpass2 = 52 $$
 
 Vi har altså ønsket en knækfrekvens på de 50 Hz. 
 Filteret loades herefter ind i MatLab filen og ligges ovenpå det støjfyldte EKG-signal i frekvensdomænet. 
@@ -214,7 +214,7 @@ Det kan nu ses på figurerne herunder at støjen ved de 50 Hz er blevet fjernet.
 Hvis man kigger godt efter på frekvensdomænet i figur 4, kan man se lidt støj mellem 35 og 85 Hz. Det ønsker vi også fjernet. 
 
 \begin{figure}[H]
-           \includegraphics[width=\linewidth]{billeder/EKGstopbandFIR}	   							\caption{EKG med båndstop FIR.}
+           \includegraphics[width=\linewidth]{billeder/EKGstopbandIIR}	   							\caption{EKG med båndstop IIR.}
 \end{figure}
 
 Dette fjernes med et FIR lavpasfilter, der også bliver designet vha. "fdatool". Her indtastes: 
