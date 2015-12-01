@@ -5,10 +5,7 @@
 
 \usepackage[margin=2cm]{geometry} 
 
-
-
 \renewcommand*\contentsname{Indholdsfortegnelse}
-
 
 \begin{document}
 
@@ -148,20 +145,34 @@ Vi vil nu gerne se ændringen i tidsdomænet ordenligt. Det sorte signal er det 
 \end{figure}
 
 \newpage
+For at udforske lidt og se hvad der ville ske forsøger vi os nu med et højpas filter på 50 Hz for at få fjernet lavfrekvent støj. 
+\begin{figure}[H]
+           \includegraphics[width=\linewidth]{billeder/VinylHP50}	   							\caption{Alle filtre i frekvensdomænet.}
+\end{figure}
+
+\newpage
 For bedre at se hvad vi præcis har fået fjernet, så ligger vi alle signalerne i frekvensdomænet oveni hinanden med forskellige farver. Så kan vi tydeligt se præcis hvilke spikes vi har fået fjernet. Det endelige signal er det sorte. Så alle de farvede spikes er det vi har fået fjernet. 
 \begin{figure}[H]
            \includegraphics[width=\linewidth]{billeder/Vinyldom}	   							\caption{Alle filtre i frekvensdomænet.}
 \end{figure}
 
+\newpage
+For at udforske lidt og se hvad der ville ske forsøger vi os nu med et højpas filter på 50 Hz for at få fjernet lavfrekvent støj. Efter højpas filteret er kommet på, så lyder vores signal simpelthen bare meget bedre. Der har altså ligget noget lavfrekvent støj, som vi har overset i frekvensdomænet. Det var godt vi udforskede lidt, da vores signal nu lyder meget bedre og klart en før. 
+\begin{figure}[H]
+           \includegraphics[width=\linewidth]{billeder/VinylHP50}	   							\caption{Alle filtre i frekvensdomænet.}
+\end{figure}
 
+\newpage
 \section{Fremtidigt arbejde}
 Vi har lært at lave og forstå FIR og IIR filtre. Vi forstår foldning af filtre. Vi forstår og kan lave DFT på et signal og henholdsvis IDFT. 
 Vi kan analysere, vurderer og forstå hvad, der sker med signaler når vi har benyttet filtre, DFT osv. Vi kan aflæse på frekvensdomæner hvad, der er støj og hvad der ikke er. 
 Vi har lært at benytte MatLab, og lave lækre forskellige detaljer som f.eks. farver. 
 Så vi mener selv at vi har godt styr på alt fra DSB og derfor ikke har noget til fremtidigt arbejde, udover at der selvfølgelig skal læses op til eksamen ;)
 
-\newpage
+
 \section{Konklusion}
-Vi kan konkluderer at vi igennem båndstop filtre og lavpas filtre har fået fjernet lyden fra vinyl afspilning og kan nu bedre høre den smukke stemme fra Henry Mancini. 
+Vi kan konkluderer at vi igennem båndstop filtre og lavpas filtre har fået fjernet lyden fra vinyl afspilning og kan nu bedre høre den smukke stemme fra Henry Mancini. \\ 
+
+Tak for lækker undervisning i DSB!!! Kærlig hilsen Martin, Finja og Mette :D 
 
 \end{document}
